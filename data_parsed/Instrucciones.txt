@@ -1,0 +1,17 @@
+Para agregar datasets se debe hacer de la siguiente forma:
+    1) Parsear y redirigir la salida del archivo PDF que contiene el horario con:
+        python scripts/parse_unab_pdf.py .\PDF_CARRERAS\<NOMBRE_DEL_PDF.pdf> > .\data_parsed\parsed_<CARRERA>_raw.json
+    
+    2) Verificar que el archivo fue creado con el nombre dado
+
+    3) Luego normalizar y coloca el JSON donde la app lo ve:
+        python scripts/normalize_unab_json.py .\data_parsed\parsed_<CARRERA>_raw.json .\public\data\data_unab_<CARRERA>_2026_1.json 2026-1
+    
+    4) Finalmente, agrega el dataset de la carrera en DATASET_OPTIONS de src/components/AppShell.tsx con el siguiente formato:
+        {
+            id: "otra-carrera-2026-1",
+            label: "Otra carrera · 2026-1",
+            path: "/data/data_unab_otra_carrera_2026_1.json",
+        },
+
+    5) Guardar y correr con npm run dev

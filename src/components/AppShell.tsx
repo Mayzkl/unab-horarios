@@ -20,6 +20,16 @@ const DATASET_OPTIONS: DatasetOption[] = [
     label: "Ing. Civil Informática · 2026-1",
     path: "/data/data_unab_normalized.json",
   },
+  {
+    id: "industrial-2026-1",
+    label: "Ing. Civil Industrial · 2026-1",
+    path: "/data/data_unab_industrial_2026_1.json"
+  },
+  {
+    id: "construccion-2026-1",
+    label: "Ing. Construccion · 2026-1",
+    path: "/data/data_unab_construccion_2026_1.json"
+  }
   // Ejemplo para futuros datasets (dejar comentado):
   // {
   //   id: "otra-carrera-2026-1",
