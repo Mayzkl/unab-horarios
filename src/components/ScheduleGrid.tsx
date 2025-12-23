@@ -2,8 +2,9 @@ import { DAYS, BLOCKS } from "@/lib/unabBlocks";
 import { Day, BlockIndex, Section, Course } from "@/types/schedule";
 
 type Props = {
-  courses: Course[];
   sectionsById: Record<string, Section>;
+  coursesById: Record<string, Course>;
+  courseColors: Record<string, string>;
   selectedSectionIds: string[];
   previewSectionId: string | null;
   highlightSlot?: string | null;
@@ -38,11 +39,12 @@ function hasPreviewConflict(occ: Map<string, string>, preview: Section | null) {
 }
 
 export default function ScheduleGrid({
-  courses,
   sectionsById,
   selectedSectionIds,
   previewSectionId,
   highlightSlot,
+  coursesById,
+  courseColors,
 }: Props) {
   const occ = buildOccupancy(sectionsById, selectedSectionIds);
   const preview = previewSectionId ? sectionsById[previewSectionId] : null;
@@ -74,6 +76,8 @@ export default function ScheduleGrid({
             label={`${blk.start} - ${blk.end}`}
             occ={occ}
             sectionsById={sectionsById}
+            coursesById={coursesById}
+            courseColors={courseColors}
             preview={preview}
             previewConflict={previewConflict}
             highlightSlot={highlightSlot}
@@ -89,6 +93,8 @@ function Row({
   label,
   occ,
   sectionsById,
+  coursesById,
+  courseColors,
   preview,
   previewConflict,
   highlightSlot,
@@ -97,6 +103,8 @@ function Row({
   label: string;
   occ: Map<string, string>;
   sectionsById: Record<string, Section>;
+  coursesById: Record<string, Course>;
+  courseColors: Record<string, string>;
   preview: Section | null;
   previewConflict: boolean;
   highlightSlot?: string | null;
@@ -112,6 +120,8 @@ function Row({
           block={block}
           occ={occ}
           sectionsById={sectionsById}
+          coursesById={coursesById}
+          courseColors={courseColors}
           preview={preview}
           previewConflict={previewConflict}
           highlightSlot={highlightSlot}
@@ -126,6 +136,8 @@ function Cell({
   block,
   occ,
   sectionsById,
+  coursesById,
+  courseColors,
   preview,
   previewConflict,
   highlightSlot,
@@ -134,6 +146,8 @@ function Cell({
   block: BlockIndex;
   occ: Map<string, string>;
   sectionsById: Record<string, Section>;
+  coursesById: Record<string, Course>;
+  courseColors: Record<string, string>;
   preview: Section | null;
   previewConflict: boolean;
   highlightSlot?: string | null;
@@ -144,6 +158,9 @@ function Cell({
 
   const sid = occ.get(key);
   const occupied = sid ? sectionsById[sid] : null;
+  const course = occupied ? coursesById[occupied.courseId] : null;
+  const courseColor = occupied ? courseColors[occupied.courseId] ?? "#0f172a" : undefined;
+  const shortName = course?.code ?? occupied?.courseId ?? "";
 
   const previewCovers =
     preview?.meetings.some((m) => m.day === day && m.blocks.includes(block)) ??
@@ -157,9 +174,21 @@ function Cell({
       ].join(" ")}
     >
       {occupied && (
-        <div className="absolute inset-1 rounded-lg bg-zinc-900 text-white text-xs p-2">
-          <div className="font-semibold">{occupied.courseId}</div>
+        <div
+          className="absolute inset-1 rounded-lg text-white text-xs p-2"
+          style={{
+            backgroundColor: courseColor,
+            borderColor: courseColor,
+            borderWidth: 1,
+          }}
+        >
+          <div className="font-semibold">{shortName}</div>
           <div className="opacity-80">NRC {occupied.nrc}</div>
+          {occupied.activityType ? (
+            <div className="opacity-80 uppercase text-[10px] tracking-wide">
+              {occupied.activityType}
+            </div>
+          ) : null}
         </div>
       )}
 

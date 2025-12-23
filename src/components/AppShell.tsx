@@ -2,9 +2,28 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Course, Section } from "@/types/schedule";
-import { buildOccupancy, findConflict, formatSlot } from "@/lib/scheduleLogic";
 import CourseSidebar from "@/components/CourseSidebar";
 import ScheduleGrid from "@/components/ScheduleGrid";
+
+const COURSE_COLOR_PALETTE = [
+  "hsl(4 82% 47%)",   // rojo
+  "hsl(27 93% 55%)",  // naranja
+  "hsl(43 89% 52%)",  // amarillo
+  "hsl(142 71% 45%)", // verde
+  "hsl(199 89% 48%)", // celeste
+  "hsl(221 83% 53%)", // azul
+  "hsl(262 83% 58%)", // violeta
+  "hsl(316 73% 52%)", // magenta
+];
+
+function fallbackColorFromString(input: string) {
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = input.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const hue = Math.abs(hash) % 360;
+  return `hsl(${hue} 65% 45%)`;
+}
 
 type NormalizedData = {
   semesters: Record<string, { courseCount: number; sectionCount: number }>;
@@ -17,10 +36,8 @@ export default function AppShell() {
   const [semester, setSemester] = useState<string>("");
   const [query, setQuery] = useState<string>("");
   const [hoveredSectionId, setHoveredSectionId] = useState<string | null>(null);
-  const [highlightSlot, setHighlightSlot] = useState<string | null>(null);
   
   // Estado para manejar las secciones seleccionadas
-  // Cambiar a un arreglo en vez de una cadena de texto para almacenar múltiples selecciones
   const [selectedByCourse, setSelectedByCourse] = useState<Record<string, string[]>>({});
 
 
@@ -52,15 +69,30 @@ export default function AppShell() {
   }, [data, semester, query]);
 
   // Filtra las secciones solo de los cursos visibles
-  const sections = useMemo(() => {
+  const visibleSections = useMemo(() => {
     if (!data) return [];
     const visibleCourseIds = new Set(courses.map(c => c.id));
     return data.sections.filter((section) => visibleCourseIds.has(section.courseId));
   }, [data, courses]);
 
   const sectionsById = useMemo(() => {
-    return Object.fromEntries(sections.map((s) => [s.id, s]));
-  }, [sections]);
+    return Object.fromEntries((data?.sections ?? []).map((s) => [s.id, s]));
+  }, [data]);
+
+  const coursesById = useMemo(() => {
+    return Object.fromEntries((data?.courses ?? []).map((c) => [c.id, c]));
+  }, [data]);
+
+  const courseColors = useMemo(() => {
+    const colors: Record<string, string> = {};
+    const coursesList = data?.courses ?? [];
+    coursesList.forEach((course, idx) => {
+      const paletteColor = COURSE_COLOR_PALETTE[idx % COURSE_COLOR_PALETTE.length];
+      colors[course.id] = paletteColor ?? fallbackColorFromString(course.id);
+    }
+    );
+    return colors;
+  }, [data]);
 
   // Obtener solo los IDs de las secciones seleccionadas
   const selectedSectionIds = useMemo(() => {
@@ -69,18 +101,37 @@ export default function AppShell() {
 
   function onSelectSection(courseId: string, sectionId: string) {
     setSelectedByCourse((prev) => {
-      const selectedSections = prev[courseId] || [];
+      const section = sectionsById[sectionId];
+      if (!section) return prev;
 
-      // Si la sección ya está seleccionada, la eliminamos
-      if (selectedSections.includes(sectionId)) {
-        return {
-          ...prev,
-          [courseId]: selectedSections.filter((id) => id !== sectionId),
-        };
+      const currentSelections = prev[courseId] ?? [];
+      const isAlreadySelected = currentSelections.includes(sectionId);
+
+      // Si se vuelve a hacer click, deseleccionamos solo esa sección.
+      if (isAlreadySelected) {
+        const remaining = currentSelections.filter((id) => id !== sectionId);
+        const next = { ...prev };
+        if (remaining.length === 0) {
+          delete next[courseId];
+        } else {
+          next[courseId] = remaining;
+        }
+        return next;
       }
 
-      // Si no está seleccionada, la agregamos
-      return { ...prev, [courseId]: [...selectedSections, sectionId] };
+      // Asegurar máximo 1 sección por tipo de actividad (TEO/TAL, etc.) dentro del mismo ramo.
+      const filteredByActivity = currentSelections.filter((id) => {
+        const existing = sectionsById[id];
+        if (!existing) return true;
+        return existing.activityType !== section.activityType;
+      });
+
+      const nextSelections = [...filteredByActivity, sectionId];
+
+      return {
+        ...prev,
+        [courseId]: nextSelections,
+      };
     });
   }
 
@@ -120,13 +171,13 @@ export default function AppShell() {
             />
 
             <div className="text-xs text-zinc-500 mt-3">
-              Cursos: {courses.length} · Secciones visibles: {sections.length}
+              Cursos: {courses.length} · Secciones visibles: {visibleSections.length}
             </div>
           </div>
 
           <CourseSidebar
             courses={courses}
-            sections={sections}
+            sections={visibleSections}
             selectedSectionByCourse={selectedByCourse}
             onHoverSection={setHoveredSectionId}
             onSelectSection={onSelectSection}
@@ -135,15 +186,14 @@ export default function AppShell() {
 
         <main className="col-span-12 lg:col-span-8 bg-white rounded-2xl p-4 border">
           <ScheduleGrid
-            courses={courses}
             sectionsById={sectionsById}
+            coursesById={coursesById}
+            courseColors={courseColors}
             selectedSectionIds={selectedSectionIds}
             previewSectionId={hoveredSectionId}
-            highlightSlot={highlightSlot}
           />
         </main>
       </div>
     </div>
   );
 }
-
