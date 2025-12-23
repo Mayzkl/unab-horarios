@@ -85,6 +85,30 @@ export default function AppShell() {
     return Object.values(selectedByCourse).flat().filter(Boolean) as string[];
   }, [selectedByCourse]);
 
+  function resolveLinkedSections(sectionId: string): Section[] {
+    const section = sectionsById[sectionId];
+    if (!section) return [];
+
+    const linked: Section[] = [];
+
+    if (Array.isArray(section.linkedSections) && section.linkedSections.length > 0) {
+      for (const linkedSection of section.linkedSections) {
+        if (linkedSection?.id) linked.push(linkedSection);
+      }
+    }
+
+    if (section.linkedNrcRaw) {
+      const linkedNrcs = section.linkedNrcRaw.match(/\d+/g) ?? [];
+      for (const nrc of linkedNrcs) {
+        const linkedSection = sectionsByNrc[nrc];
+        if (linkedSection) linked.push(linkedSection);
+      }
+    }
+
+    const dedup = new Map(linked.map((ls) => [ls.id, ls]));
+    return Array.from(dedup.values());
+  }
+
   function onSelectSection(courseId: string, sectionId: string) {
     setSelectedByCourse((prev) => {
       const section = sectionsById[sectionId];

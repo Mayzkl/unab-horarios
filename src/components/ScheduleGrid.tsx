@@ -1,5 +1,5 @@
 import { DAYS, BLOCKS } from "@/lib/unabBlocks";
-import { Day, BlockIndex, Section, Course } from "@/types/schedule";
+import { Day, BlockIndex, Section } from "@/types/schedule";
 
 type Props = {
   sectionsById: Record<string, Section>;
