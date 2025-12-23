@@ -2,51 +2,109 @@ import { DAYS, BLOCKS } from "@/lib/unabBlocks";
 import { Day, BlockIndex, Section, Course } from "@/types/schedule";
 
 type Props = {
-  courses: Course[];
   sectionsById: Record<string, Section>;
+  coursesById: Record<string, Course>;
+  courseColors: Record<string, string>;
   selectedSectionIds: string[];
   previewSectionId: string | null;
-  highlightSlot?: string | null;
 };
+
+type OccupancySpan = {
+  section: Section;
+  day: Day;
+  startBlock: BlockIndex;
+  span: number;
+  slotKeys: string[];
+};
+
+const BLOCK_INDEX_TO_ROW = new Map<number, number>(
+  BLOCKS.map((b, idx) => [b.index, idx + 1])
+);
+const DAY_TO_COLUMN = new Map<Day, number>(
+  DAYS.map((d, idx) => [d as Day, idx + 2])
+);
+
+function computeSpansForSection(section: Section): OccupancySpan[] {
+  const spans: OccupancySpan[] = [];
+
+  for (const meeting of section.meetings) {
+    const blocks = [...meeting.blocks].sort((a, b) => a - b);
+    if (blocks.length === 0) continue;
+
+    let start = blocks[0];
+    let currentSpan = 1;
+    let slots: string[] = [`${meeting.day}-${blocks[0]}`];
+
+    for (let i = 1; i < blocks.length; i += 1) {
+      const prev = blocks[i - 1];
+      const curr = blocks[i];
+
+      if (curr === prev + 1) {
+        currentSpan += 1;
+        slots.push(`${meeting.day}-${curr}`);
+      } else {
+        spans.push({
+          section,
+          day: meeting.day as Day,
+          startBlock: start as BlockIndex,
+          span: currentSpan,
+          slotKeys: slots,
+        });
+        start = curr;
+        currentSpan = 1;
+        slots = [`${meeting.day}-${curr}`];
+      }
+    }
+
+    spans.push({
+      section,
+      day: meeting.day as Day,
+      startBlock: start as BlockIndex,
+      span: currentSpan,
+      slotKeys: slots,
+    });
+  }
+
+  return spans;
+}
 
 function buildOccupancy(
   sectionsById: Record<string, Section>,
   sectionIds: string[]
-): Map<string, string> {
-  // key = `${day}-${block}` value = sectionId
+): { spans: OccupancySpan[]; occ: Map<string, string> } {
   const occ = new Map<string, string>();
+  const spans: OccupancySpan[] = [];
+
   for (const sid of sectionIds) {
     const s = sectionsById[sid];
     if (!s) continue;
-    for (const m of s.meetings) {
-      for (const b of m.blocks) {
-        occ.set(`${m.day}-${b}`, sid);
+
+    const sectionSpans = computeSpansForSection(s);
+    spans.push(...sectionSpans);
+
+    for (const sp of sectionSpans) {
+      for (const key of sp.slotKeys) {
+        occ.set(key, sid);
       }
     }
   }
-  return occ;
-}
-
-function hasPreviewConflict(occ: Map<string, string>, preview: Section | null) {
-  if (!preview) return false;
-  for (const m of preview.meetings) {
-    for (const b of m.blocks) {
-      if (occ.has(`${m.day}-${b}`)) return true;
-    }
-  }
-  return false;
+  return { spans, occ };
 }
 
 export default function ScheduleGrid({
-  courses,
   sectionsById,
   selectedSectionIds,
   previewSectionId,
-  highlightSlot,
+  coursesById,
+  courseColors,
 }: Props) {
-  const occ = buildOccupancy(sectionsById, selectedSectionIds);
+  const { spans, occ } = buildOccupancy(sectionsById, selectedSectionIds);
   const preview = previewSectionId ? sectionsById[previewSectionId] : null;
-  const previewConflict = hasPreviewConflict(occ, preview);
+
+  const previewSpans = preview ? computeSpansForSection(preview) : [];
+  const previewConflict =
+    previewSpans.length > 0 &&
+    previewSpans.some((sp) => sp.slotKeys.some((key) => occ.has(key)));
 
   return (
     <div className="w-full">
@@ -65,117 +123,92 @@ export default function ScheduleGrid({
         ))}
       </div>
 
-      {/* grid */}
-      <div className="grid grid-cols-[120px_repeat(6,1fr)] gap-2">
-        {BLOCKS.map((blk) => (
-          <Row
-            key={blk.index}
-            block={blk.index}
-            label={`${blk.start} - ${blk.end}`}
-            occ={occ}
-            sectionsById={sectionsById}
-            preview={preview}
-            previewConflict={previewConflict}
-            highlightSlot={highlightSlot}
-          />
+      <div
+        className="relative grid grid-cols-[120px_repeat(6,1fr)] gap-2"
+        style={{
+          gridTemplateRows: `repeat(${BLOCKS.length}, minmax(3.5rem, 1fr))`,
+        }}
+      >
+        {/* hour labels */}
+        {BLOCKS.map((blk, idx) => (
+          <div
+            key={`label-${blk.index}`}
+            className="text-sm text-zinc-600 flex items-center"
+            style={{ gridColumn: 1, gridRow: idx + 1 }}
+          >
+            {blk.start} - {blk.end}
+          </div>
         ))}
+
+        {/* background cells */}
+        {DAYS.map((day) =>
+          BLOCKS.map((blk) => (
+            <div
+              key={`bg-${day}-${blk.index}`}
+              className="h-full rounded-xl bg-zinc-50 border border-zinc-100"
+              style={{
+                gridColumn: DAY_TO_COLUMN.get(day as Day),
+                gridRow: BLOCK_INDEX_TO_ROW.get(blk.index),
+              }}
+            />
+          ))
+        )}
+
+        {/* selected sections */}
+        {spans.map((sp) => {
+          const col = DAY_TO_COLUMN.get(sp.day);
+          const row = BLOCK_INDEX_TO_ROW.get(sp.startBlock);
+          if (!col || !row) return null;
+
+          const course = coursesById[sp.section.courseId];
+          const courseColor =
+            courseColors[sp.section.courseId] ?? "hsl(221 39% 11%)";
+          const shortName = course?.code ?? sp.section.courseId;
+
+          return (
+            <div
+              key={`${sp.section.id}-${sp.day}-${sp.startBlock}`}
+              className="rounded-lg text-white text-xs p-2 flex flex-col gap-0.5"
+              style={{
+                gridColumn: col,
+                gridRow: `${row} / span ${sp.span}`,
+                backgroundColor: courseColor,
+                borderColor: courseColor,
+                borderWidth: 1,
+              }}
+            >
+              <div className="font-semibold">{shortName}</div>
+              <div className="opacity-90">NRC {sp.section.nrc}</div>
+              {sp.section.activityType ? (
+                <div className="opacity-90 uppercase text-[10px] tracking-wide">
+                  {sp.section.activityType}
+                </div>
+              ) : null}
+            </div>
+          );
+        })}
+
+        {/* preview spans */}
+        {!previewConflict &&
+          previewSpans.map((sp) => {
+            const col = DAY_TO_COLUMN.get(sp.day);
+            const row = BLOCK_INDEX_TO_ROW.get(sp.startBlock);
+            if (!col || !row) return null;
+            return (
+              <div
+                key={`preview-${sp.section.id}-${sp.day}-${sp.startBlock}`}
+                className="rounded-lg border text-xs p-2 flex flex-col gap-0.5 bg-white/80"
+                style={{
+                  gridColumn: col,
+                  gridRow: `${row} / span ${sp.span}`,
+                }}
+              >
+                <div className="font-semibold">{sp.section.courseId}</div>
+                <div className="opacity-80">NRC {sp.section.nrc}</div>
+              </div>
+            );
+          })}
       </div>
-    </div>
-  );
-}
-
-function Row({
-  block,
-  label,
-  occ,
-  sectionsById,
-  preview,
-  previewConflict,
-  highlightSlot,
-}: {
-  block: BlockIndex;
-  label: string;
-  occ: Map<string, string>;
-  sectionsById: Record<string, Section>;
-  preview: Section | null;
-  previewConflict: boolean;
-  highlightSlot?: string | null;
-}) {
-  return (
-    <>
-      <div className="text-sm text-zinc-600 flex items-center">{label}</div>
-
-      {DAYS.map((day) => (
-        <Cell
-          key={`${day}-${block}`}
-          day={day as Day}
-          block={block}
-          occ={occ}
-          sectionsById={sectionsById}
-          preview={preview}
-          previewConflict={previewConflict}
-          highlightSlot={highlightSlot}
-        />
-      ))}
-    </>
-  );
-}
-
-function Cell({
-  day,
-  block,
-  occ,
-  sectionsById,
-  preview,
-  previewConflict,
-  highlightSlot,
-}: {
-  day: Day;
-  block: BlockIndex;
-  occ: Map<string, string>;
-  sectionsById: Record<string, Section>;
-  preview: Section | null;
-  previewConflict: boolean;
-  highlightSlot?: string | null;
-}) {
-  const key = `${day}-${block}`;
-
-  const isHighlighted = highlightSlot === key;
-
-  const sid = occ.get(key);
-  const occupied = sid ? sectionsById[sid] : null;
-
-  const previewCovers =
-    preview?.meetings.some((m) => m.day === day && m.blocks.includes(block)) ??
-    false;
-
-  return (
-    <div
-      className={[
-        "relative h-14 rounded-xl bg-zinc-50 border border-zinc-100 overflow-hidden transition",
-        isHighlighted ? "ring-4 ring-red-400 border-red-300" : "",
-      ].join(" ")}
-    >
-      {occupied && (
-        <div className="absolute inset-1 rounded-lg bg-zinc-900 text-white text-xs p-2">
-          <div className="font-semibold">{occupied.courseId}</div>
-          <div className="opacity-80">NRC {occupied.nrc}</div>
-        </div>
-      )}
-
-      {previewCovers && !occupied && (
-        <div
-          className={[
-            "absolute inset-1 rounded-lg border text-xs p-2",
-            previewConflict
-              ? "border-red-400 bg-red-50 text-red-700"
-              : "border-zinc-400 bg-white text-zinc-700",
-          ].join(" ")}
-        >
-          <div className="font-semibold">{preview!.courseId}</div>
-          <div className="opacity-80">NRC {preview!.nrc}</div>
-        </div>
-      )}
     </div>
   );
 }
