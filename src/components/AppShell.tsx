@@ -5,13 +5,24 @@ import { Course, Section } from "@/types/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
 import ScheduleGrid from "@/components/ScheduleGrid";
 
-function colorFromString(input: string) {
+const COURSE_COLOR_PALETTE = [
+  "hsl(4 82% 47%)",   // rojo
+  "hsl(27 93% 55%)",  // naranja
+  "hsl(43 89% 52%)",  // amarillo
+  "hsl(142 71% 45%)", // verde
+  "hsl(199 89% 48%)", // celeste
+  "hsl(221 83% 53%)", // azul
+  "hsl(262 83% 58%)", // violeta
+  "hsl(316 73% 52%)", // magenta
+];
+
+function fallbackColorFromString(input: string) {
   let hash = 0;
   for (let i = 0; i < input.length; i += 1) {
     hash = input.charCodeAt(i) + ((hash << 5) - hash);
   }
   const hue = Math.abs(hash) % 360;
-  return `hsl(${hue} 65% 40%)`;
+  return `hsl(${hue} 65% 45%)`;
 }
 
 type NormalizedData = {
@@ -74,9 +85,12 @@ export default function AppShell() {
 
   const courseColors = useMemo(() => {
     const colors: Record<string, string> = {};
-    for (const course of data?.courses ?? []) {
-      colors[course.id] = colorFromString(course.id);
+    const coursesList = data?.courses ?? [];
+    coursesList.forEach((course, idx) => {
+      const paletteColor = COURSE_COLOR_PALETTE[idx % COURSE_COLOR_PALETTE.length];
+      colors[course.id] = paletteColor ?? fallbackColorFromString(course.id);
     }
+    );
     return colors;
   }, [data]);
 
