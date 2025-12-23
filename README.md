@@ -5,9 +5,7 @@
 ## Requisitos
  - Node.js 18 o superior (se probó con Node 18+/20+).
  - npm 9 o superior.
- 
--## Instalación
-+> **Opcional (solo si usarás el parser de PDF):** Python 3.11+ y un entorno virtual (`venv`) para ejecutar `scripts/parse_unab_pdf.py`.
+ > **Opcional (solo si usarás el parser de PDF):** Python 3.11+ y un entorno virtual (`venv`) para ejecutar `scripts/parse_unab_pdf.py`.
  
 ## Instalación y ejecución
 
