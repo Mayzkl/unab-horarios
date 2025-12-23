@@ -3,7 +3,7 @@ import { Course, Section } from "@/types/schedule";
 type Props = {
   courses: Course[];
   sections: Section[];
-  selectedSectionByCourse: Record<string, string | null>;
+  selectedSectionByCourse: Record<string, string | string[]>;
   onHoverSection: (sectionId: string | null) => void;
   onSelectSection: (courseId: string, sectionId: string) => void;
 };

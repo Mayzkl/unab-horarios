@@ -20,7 +20,9 @@ export default function AppShell() {
   const [highlightSlot, setHighlightSlot] = useState<string | null>(null);
   
   // Estado para manejar las secciones seleccionadas
-  const [selectedByCourse, setSelectedByCourse] = useState<Record<string, string | null>>({});
+  // Cambiar a un arreglo en vez de una cadena de texto para almacenar múltiples selecciones
+  const [selectedByCourse, setSelectedByCourse] = useState<Record<string, string[]>>({});
+
 
   // Cargar datos desde la API
   useEffect(() => {
@@ -62,34 +64,26 @@ export default function AppShell() {
 
   // Obtener solo los IDs de las secciones seleccionadas
   const selectedSectionIds = useMemo(() => {
-    return Object.values(selectedByCourse).filter(Boolean) as string[];
+    return Object.values(selectedByCourse).flat().filter(Boolean) as string[];
   }, [selectedByCourse]);
 
   function onSelectSection(courseId: string, sectionId: string) {
-    const selectedWithoutThisCourse = Object.entries(selectedByCourse)
-      .filter(([cid, sid]) => cid !== courseId && !!sid)
-      .map(([, sid]) => sid as string);
+    setSelectedByCourse((prev) => {
+      const selectedSections = prev[courseId] || [];
 
-    const occ = buildOccupancy(sectionsById, selectedWithoutThisCourse);
-    const candidate = sectionsById[sectionId];
-    const conflict = findConflict(occ, candidate);
+      // Si la sección ya está seleccionada, la eliminamos
+      if (selectedSections.includes(sectionId)) {
+        return {
+          ...prev,
+          [courseId]: selectedSections.filter((id) => id !== sectionId),
+        };
+      }
 
-    if (conflict) {
-      const other = sectionsById[conflict.conflictingSectionId];
-
-      setHighlightSlot(conflict.slot);
-      setTimeout(() => setHighlightSlot(null), 900);
-
-      alert(
-        `Choque detectado en ${formatSlot(conflict.slot)}\n` +
-        `Nuevo: ${candidate.courseId} (NRC ${candidate.nrc})\n` +
-        `Choca con: ${other.courseId} (NRC ${other.nrc})`
-      );
-      return;
-    }
-
-    setSelectedByCourse((prev) => ({ ...prev, [courseId]: sectionId }));
+      // Si no está seleccionada, la agregamos
+      return { ...prev, [courseId]: [...selectedSections, sectionId] };
+    });
   }
+
 
   if (!data) {
     return (
