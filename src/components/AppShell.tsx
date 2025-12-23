@@ -5,6 +5,8 @@ import { Course, Section } from "@/types/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
 import ScheduleGrid from "@/components/ScheduleGrid";
 
+const STORAGE_KEY = "unab-horarios/selection";
+
 const COURSE_COLOR_PALETTE = [
   "hsl(4 82% 47%)",   // rojo
   "hsl(27 93% 55%)",  // naranja
@@ -52,6 +54,19 @@ export default function AppShell() {
       // Configuración inicial para el semestre
       const first = Object.keys(json.semesters ?? {})[0] ?? "";
       setSemester(first);
+
+      // Intentar restaurar guardado local si coincide el semestre
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed.semester === first && parsed.selectedByCourse) {
+            setSelectedByCourse(parsed.selectedByCourse);
+          }
+        }
+      } catch {
+        // ignoramos errores de parseo
+      }
     })().catch((e) => {
       console.error(e);
       alert("Error cargando el JSON.");
@@ -159,6 +174,20 @@ export default function AppShell() {
     });
   }
 
+  function onSaveSchedule() {
+    const payload = {
+      semester,
+      selectedByCourse,
+      savedAt: new Date().toISOString(),
+    };
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      alert("Horario guardado localmente.");
+    } catch {
+      alert("No se pudo guardar el horario.");
+    }
+  }
+
 
   if (!data) {
     return (
@@ -197,6 +226,13 @@ export default function AppShell() {
             <div className="text-xs text-zinc-500 mt-3">
               Cursos: {courses.length} · Secciones visibles: {visibleSections.length}
             </div>
+
+            <button
+              onClick={onSaveSchedule}
+              className="mt-3 w-full rounded-xl bg-zinc-900 text-white px-3 py-2 text-sm font-semibold hover:bg-zinc-800"
+            >
+              Guardar horario (local)
+            </button>
           </div>
 
           <CourseSidebar
