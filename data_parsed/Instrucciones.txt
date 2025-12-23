@@ -1,4 +1,4 @@
-Para agregar datasets se debe hacer de la siguiente forma:
+Para agregar carreras se debe hacer de la siguiente forma:
     1) Parsear y redirigir la salida del archivo PDF que contiene el horario con:
         python scripts/parse_unab_pdf.py .\PDF_CARRERAS\<NOMBRE_DEL_PDF.pdf> > .\data_parsed\parsed_<CARRERA>_raw.json
     

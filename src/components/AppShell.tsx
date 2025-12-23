@@ -170,7 +170,7 @@ export default function AppShell() {
     if (section.linkedNrcRaw) {
       const linkedNrcs = section.linkedNrcRaw.match(/\d+/g) ?? [];
       for (const nrc of linkedNrcs) {
-        const linkedSection = sectionsByNrc[nrc];
+        const linkedSection = sectionsById[nrc];
         if (linkedSection) linked.push(linkedSection);
       }
     }
