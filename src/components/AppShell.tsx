@@ -300,13 +300,6 @@ export default function AppShell() {
                 Exportar PDF
               </button>
             </div>
-
-            <button
-              onClick={onSaveSchedule}
-              className="mt-3 w-full rounded-xl bg-zinc-900 text-white px-3 py-2 text-sm font-semibold hover:bg-zinc-800"
-            >
-              Guardar horario (local)
-            </button>
           </div>
 
           <CourseSidebar
