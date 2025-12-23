@@ -1,0 +1,4722 @@
+{
+  "semesters": {
+    "2026-1": {
+      "courseCount": 35,
+      "sectionCount": 160
+    }
+  },
+  "courses": [
+    {
+      "id": "TDFI101",
+      "code": "TDFI101",
+      "name": "Introduccion A La Ingenieria",
+      "semester": "2026-1"
+    },
+    {
+      "id": "TDFI102",
+      "code": "TDFI102",
+      "name": "Introduccion A La\nProgramacion",
+      "semester": "2026-1"
+    },
+    {
+      "id": "TDFI104",
+      "code": "TDFI104",
+      "name": "Compliance Y Accountability",
+      "semester": "2026-1"
+    },
+    {
+      "id": "PTEC101",
+      "code": "PTEC101",
+      "name": "Algoritmos Y Estructuras\nDe Datos",
+      "semester": "2026-1"
+    },
+    {
+      "id": "PTEC102",
+      "code": "PTEC102",
+      "name": "Paradigmas De Programacion",
+      "semester": "2026-1"
+    },
+    {
+      "id": "PTEC105",
+      "code": "PTEC105",
+      "name": "Ingenieria De Software I",
+      "semester": "2026-1"
+    },
+    {
+      "id": "ING129",
+      "code": "ING129",
+      "name": "Ingles Ii",
+      "semester": "2026-1"
+    },
+    {
+      "id": "ING249",
+      "code": "ING249",
+      "name": "Ingles Iv",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CFIS310",
+      "code": "CFIS310",
+      "name": "Fisica General",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CFIS328",
+      "code": "CFIS328",
+      "name": "Fisica Experimental",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CFIS332",
+      "code": "CFIS332",
+      "name": "Mecanica",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CFIS344",
+      "code": "CFIS344",
+      "name": "Electricidad Y Magnetismo",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF1P07",
+      "code": "CINF1P07",
+      "name": "Ciberseguridad",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF1P11",
+      "code": "CINF1P11",
+      "name": "Top 3 - Administracion Ti",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF1P12",
+      "code": "CINF1P12",
+      "name": "Top 3 - Desarrollo De Videoju",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF1P13",
+      "code": "CINF1P13",
+      "name": "Ibm Inteligencia Artificial",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF1P16",
+      "code": "CINF1P16",
+      "name": "Top 2: Desarrollo Agil",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF101",
+      "code": "CINF101",
+      "name": "Analisis Y Diseno De\nAlgoritmos",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF102",
+      "code": "CINF102",
+      "name": "Fundamentos De\nComputacion De Alto\nDesempeno",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF104",
+      "code": "CINF104",
+      "name": "Aprendizaje De Maquina",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF105",
+      "code": "CINF105",
+      "name": "Optimizacion",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF108",
+      "code": "CINF108",
+      "name": "Portafolio De Proyectos",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF109",
+      "code": "CINF109",
+      "name": "Administracion Financiera En\nProyectos De I + D + I",
+      "semester": "2026-1"
+    },
+    {
+      "id": "CINF110",
+      "code": "CINF110",
+      "name": "Ciencia De Datos",
+      "semester": "2026-1"
+    },
+    {
+      "id": "FMMP012",
+      "code": "FMMP012",
+      "name": "Introduccion A Las\nMatematicas",
+      "semester": "2026-1"
+    },
+    {
+      "id": "FMMP112",
+      "code": "FMMP112",
+      "name": "Calculo Diferencial",
+      "semester": "2026-1"
+    },
+    {
+      "id": "EFP027",
+      "code": "EFP027",
+      "name": "Teoria De Gestion De\nProyectos",
+      "semester": "2026-1"
+    },
+    {
+      "id": "FMMP212",
+      "code": "FMMP212",
+      "name": "Calculo Integral",
+      "semester": "2026-1"
+    },
+    {
+      "id": "EFP028",
+      "code": "EFP028",
+      "name": "Analisis De Impacto Y\nSostenibilidad En La Gestion\nDe Proyectos",
+      "semester": "2026-1"
+    },
+    {
+      "id": "FMMP312",
+      "code": "FMMP312",
+      "name": "Sistemas Y Ecuaciones\nDiferenciales Lineales",
+      "semester": "2026-1"
+    },
+    {
+      "id": "EFP035",
+      "code": "EFP035",
+      "name": "Liderando Equipos\nIntegradores",
+      "semester": "2026-1"
+    },
+    {
+      "id": "FMSP316",
+      "code": "FMSP316",
+      "name": "Metodos Cuantitativos",
+      "semester": "2026-1"
+    },
+    {
+      "id": "EFP036",
+      "code": "EFP036",
+      "name": "Evaluacion De Proyectos Y\nProgramas",
+      "semester": "2026-1"
+    },
+    {
+      "id": "ACAD101",
+      "code": "ACAD101",
+      "name": "Taller De Innovacion Y\nEmprendimiento I",
+      "semester": "2026-1"
+    },
+    {
+      "id": "ACAD103",
+      "code": "ACAD103",
+      "name": "Taller De Innovacion Y\nEmprendimiento Iii",
+      "semester": "2026-1"
+    }
+  ],
+  "sections": [
+    {
+      "id": "NRC-11258",
+      "nrc": "11258",
+      "courseId": "TDFI101",
+      "sectionLabel": "587",
+      "activityType": "TEO",
+      "professor": "MONICA QUEZADA ESPINOZA",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 14:00 A 15:40 A1-SAL001 ; LU\n14:00 A 15:40 A1-SAL401",
+      "linkedNrcRaw": "11260(TAL)\n,\n11261(TAL)\n,\n11262(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11259",
+      "nrc": "11259",
+      "courseId": "TDFI101",
+      "sectionLabel": "588",
+      "activityType": "TEO",
+      "professor": "MARIA VIVANCO SOFFIA",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A1-SAL003 ; JU\n14:00 A 15:40 A1-SAL002",
+      "linkedNrcRaw": "11260(TAL)\n,\n11261(TAL)\n,\n11262(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11260",
+      "nrc": "11260",
+      "courseId": "TDFI101",
+      "sectionLabel": "589",
+      "activityType": "TAL",
+      "professor": "ROSITA IVONNE MUNOZ BENITEZ",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 08:30 A 10:10 A1-SAL004",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11261",
+      "nrc": "11261",
+      "courseId": "TDFI101",
+      "sectionLabel": "590",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 08:30 A 10:10 A2-SAL405",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11262",
+      "nrc": "11262",
+      "courseId": "TDFI101",
+      "sectionLabel": "591",
+      "activityType": "TAL",
+      "professor": "JOSE MANUEL FUENTES CID",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 08:30 A 10:10 A2-SAL201",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11263",
+      "nrc": "11263",
+      "courseId": "TDFI101",
+      "sectionLabel": "592",
+      "activityType": "TEO",
+      "professor": "JOSE MANUEL FUENTES CID",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 15:50 A 17:30 A2-SAL308 ; JU\n15:50 A 17:30 A2-SAL202",
+      "linkedNrcRaw": "11267(TAL)\n,\n11265(TAL)\n,\n11266(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11264",
+      "nrc": "11264",
+      "courseId": "TDFI101",
+      "sectionLabel": "593",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 15:50 A 17:30 A2-SAL309 ; JU\n15:50 A 17:30 A2-SAL404",
+      "linkedNrcRaw": "11267(TAL)\n,\n11265(TAL)\n,\n11266(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11265",
+      "nrc": "11265",
+      "courseId": "TDFI101",
+      "sectionLabel": "594",
+      "activityType": "TAL",
+      "professor": "ALVARO ALBERTO SANCHEZ\nCOLMENARES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 10:20 A 12:00 A2-SAL404",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11266",
+      "nrc": "11266",
+      "courseId": "TDFI101",
+      "sectionLabel": "595",
+      "activityType": "TAL",
+      "professor": "ROSITA IVONNE MUNOZ BENITEZ",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 10:20 A 12:00 A2-SAL402",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11267",
+      "nrc": "11267",
+      "courseId": "TDFI101",
+      "sectionLabel": "596",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 10:20 A 12:00 A2-SAL408",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11268",
+      "nrc": "11268",
+      "courseId": "TDFI101",
+      "sectionLabel": "597",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 14:00 A 15:40 A2-SAL404 ; MA\n14:00 A 15:40 A1-SAL405",
+      "linkedNrcRaw": "11270(TAL)\n,\n11271(TAL)\n,\n11272(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11269",
+      "nrc": "11269",
+      "courseId": "TDFI101",
+      "sectionLabel": "598",
+      "activityType": "TEO",
+      "professor": "MONICA QUEZADA ESPINOZA",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 12:10 A 13:50 A2-SAL309 ; MA\n14:00 A 15:40 A1-SAL402",
+      "linkedNrcRaw": "11270(TAL)\n,\n11271(TAL)\n,\n11272(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11270",
+      "nrc": "11270",
+      "courseId": "TDFI101",
+      "sectionLabel": "599",
+      "activityType": "TAL",
+      "professor": "PAOLO ROLANDO HERRERA\nMANRIQUEZ",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 14:00 A 15:40 A1-SAL005",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11271",
+      "nrc": "11271",
+      "courseId": "TDFI101",
+      "sectionLabel": "600",
+      "activityType": "TAL",
+      "professor": "ROSITA IVONNE MUNOZ BENITEZ",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 14:00 A 15:40 A2-SAL302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11272",
+      "nrc": "11272",
+      "courseId": "TDFI101",
+      "sectionLabel": "601",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 14:00 A 15:40 A1-SAL001",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11274",
+      "nrc": "11274",
+      "courseId": "TDFI102",
+      "sectionLabel": "551",
+      "activityType": "TAL",
+      "professor": "CESAR IVAN GUTIERREZ\nHERNANDEZ",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 08:30 A 10:10 A1-COM402 ;\nLU 08:30 A 10:10 A1-COM302 ;\nMA 08:30 A 10:10 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11275",
+      "nrc": "11275",
+      "courseId": "TDFI102",
+      "sectionLabel": "552",
+      "activityType": "TAL",
+      "professor": "HECTOR EUGENIO REYES DIAZ",
+      "modality": "PRESENCIAL",
+      "vacancies": 24,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 10:10 A1-COM401 ;\nJU 08:30 A 10:10 A1-COM003 ; LU\n08:30 A 10:10 A1-COM301",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11276",
+      "nrc": "11276",
+      "courseId": "TDFI102",
+      "sectionLabel": "553",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 08:30 A 10:10 A1-COM401 ;\nJU 15:50 A 17:30 A1-COM304 ; MA\n14:00 A 15:40 A1-COM305",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11277",
+      "nrc": "11277",
+      "courseId": "TDFI102",
+      "sectionLabel": "554",
+      "activityType": "TAL",
+      "professor": "OSCAR EDUARDO ZUNIGA LARA",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 10:20 A 12:00 A1-COM305 ; MI\n10:20 A 12:00 A1-COM302 ; LU\n10:20 A 12:00 A1-COM303",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11278",
+      "nrc": "11278",
+      "courseId": "TDFI102",
+      "sectionLabel": "555",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 10:20 A 12:00 A1-COM304 ;\nMA 10:20 A 12:00 A1-COM401 ; JU\n10:20 A 12:00 A1-COM304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11279",
+      "nrc": "11279",
+      "courseId": "TDFI102",
+      "sectionLabel": "556",
+      "activityType": "TAL",
+      "professor": "JORGE HUMBERTO SABATTIN\nORTEGA",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 12:10 A 13:50 A1-COM401 ;\nLU 12:10 A 13:50 A1-COM303 ; JU\n12:10 A 13:50 A1-COM401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11280",
+      "nrc": "11280",
+      "courseId": "TDFI102",
+      "sectionLabel": "557",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 12:10 A 13:50 A1-COM302 ;\nLU 12:10 A 13:50 A1-COM302 ; JU\n12:10 A 13:50 A1-COM305",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11281",
+      "nrc": "11281",
+      "courseId": "TDFI102",
+      "sectionLabel": "558",
+      "activityType": "TAL",
+      "professor": "JOHN RIOS GRIEGO",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 12:10 A 13:50 A1-COM402 ;\nJU 12:10 A 13:50 A1-COM402 ; LU\n12:10 A 13:50 A1-COM304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11303",
+      "nrc": "11303",
+      "courseId": "TDFI104",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 17:40 A 19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11304",
+      "nrc": "11304",
+      "courseId": "TDFI104",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "SASCHA'S GIORGIA JURY MOLINA",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            6
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 17:40 A 19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11305",
+      "nrc": "11305",
+      "courseId": "TDFI104",
+      "sectionLabel": "552",
+      "activityType": "TEO",
+      "professor": "LEIDYS AZUCENA PERNIA DE\nBRICENO",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            6
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 17:40 A 19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11306",
+      "nrc": "11306",
+      "courseId": "TDFI104",
+      "sectionLabel": "553",
+      "activityType": "TEO",
+      "professor": "MARCELO GIOVANNI MUNOZ ROJAS",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            6
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 17:40 A 19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11315",
+      "nrc": "11315",
+      "courseId": "TDFI104",
+      "sectionLabel": "562",
+      "activityType": "TEO",
+      "professor": "PABLO FERNANDO FUENTES\nCACERES",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 17:40 A 19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7946",
+      "nrc": "7946",
+      "courseId": "PTEC101",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 10:20 A 12:00 A2-SAL302 ; VI\n10:20 A 12:00 A2-SAL401",
+      "linkedNrcRaw": "7956(TAL),\n7958(TAL),\n7953(TAL),\n7957(TAL),\n7951(TAL),\n7952(TAL),\n7954(TAL),\n7955(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7947",
+      "nrc": "7947",
+      "courseId": "PTEC101",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "IRENE ROSA ZUCCAR PARRINI",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 12:10 A 13:50 A1-SAL003 ; VI\n12:10 A 13:50 A2-SAL205",
+      "linkedNrcRaw": "7956(TAL),\n7958(TAL),\n7953(TAL),\n7957(TAL),\n7951(TAL),\n7952(TAL),\n7954(TAL),\n7955(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7948",
+      "nrc": "7948",
+      "courseId": "PTEC101",
+      "sectionLabel": "552",
+      "activityType": "TEO",
+      "professor": "IRENE ROSA ZUCCAR PARRINI",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 12:10 A 13:50 A2-SAL307 ; JU\n12:10 A 13:50 A2-SAL404",
+      "linkedNrcRaw": "7956(TAL),\n7958(TAL),\n7953(TAL),\n7957(TAL),\n7951(TAL),\n7952(TAL),\n7954(TAL),\n7955(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7949",
+      "nrc": "7949",
+      "courseId": "PTEC101",
+      "sectionLabel": "553",
+      "activityType": "TEO",
+      "professor": "IRENE ROSA ZUCCAR PARRINI",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 10:20 A 12:00 A1-SAL401 ; MA\n10:20 A 12:00 -",
+      "linkedNrcRaw": "7956(TAL),\n7958(TAL),\n7953(TAL),\n7957(TAL),\n7951(TAL),\n7952(TAL),\n7954(TAL),\n7955(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7950",
+      "nrc": "7950",
+      "courseId": "PTEC101",
+      "sectionLabel": "554",
+      "activityType": "TEO",
+      "professor": "IRENE ROSA ZUCCAR PARRINI",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 10:10 A2-SAL306 ; JU\n08:30 A 10:10 A2-SAL408",
+      "linkedNrcRaw": "7956(TAL),\n7958(TAL),\n7953(TAL),\n7957(TAL),\n7951(TAL),\n7952(TAL),\n7954(TAL),\n7955(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7951",
+      "nrc": "7951",
+      "courseId": "PTEC101",
+      "sectionLabel": "555",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7952",
+      "nrc": "7952",
+      "courseId": "PTEC101",
+      "sectionLabel": "556",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 24,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 08:30 A 10:10 A1-COM003",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7953",
+      "nrc": "7953",
+      "courseId": "PTEC101",
+      "sectionLabel": "557",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 08:30 A 10:10 A1-COM303",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7954",
+      "nrc": "7954",
+      "courseId": "PTEC101",
+      "sectionLabel": "558",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 15:50 A 17:30 A1-COM304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7955",
+      "nrc": "7955",
+      "courseId": "PTEC101",
+      "sectionLabel": "559",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 15:50 A 17:30 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7956",
+      "nrc": "7956",
+      "courseId": "PTEC101",
+      "sectionLabel": "560",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 14:00 A 15:40 A1-COM304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7957",
+      "nrc": "7957",
+      "courseId": "PTEC101",
+      "sectionLabel": "561",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A1-COM303",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7958",
+      "nrc": "7958",
+      "courseId": "PTEC101",
+      "sectionLabel": "562",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 10:20 A 12:00 A1-COM305",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7959",
+      "nrc": "7959",
+      "courseId": "PTEC102",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "JERRY JESUS PENA MORALES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 14:00 A 15:40 A1-COM302 ;\nMA 14:00 A 15:40 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7960",
+      "nrc": "7960",
+      "courseId": "PTEC102",
+      "sectionLabel": "551",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 15:50 A 17:30 A1-COM301 ; MI\n15:50 A 17:30 A1-COM402",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7961",
+      "nrc": "7961",
+      "courseId": "PTEC102",
+      "sectionLabel": "552",
+      "activityType": "TAL",
+      "professor": "ISMAEL MORENO FLORES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 14:00 A 15:40 A1-COM304 ;\nMA 14:00 A 15:40 A1-COM304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7962",
+      "nrc": "7962",
+      "courseId": "PTEC102",
+      "sectionLabel": "553",
+      "activityType": "TAL",
+      "professor": "ISMAEL MORENO FLORES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 15:50 A 17:30 A1-COM301 ; LU\n15:50 A 17:30 A1-COM303",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7963",
+      "nrc": "7963",
+      "courseId": "PTEC102",
+      "sectionLabel": "554",
+      "activityType": "TAL",
+      "professor": "JERRY JESUS PENA MORALES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A1-COM301 ; MI\n14:00 A 15:40 A1-COM402",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7964",
+      "nrc": "7964",
+      "courseId": "PTEC102",
+      "sectionLabel": "555",
+      "activityType": "TAL",
+      "professor": "ISMAEL MORENO FLORES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 14:00 A 15:40 A1-COM302 ; LU\n14:00 A 15:40 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7970",
+      "nrc": "7970",
+      "courseId": "PTEC102",
+      "sectionLabel": "561",
+      "activityType": "TAL",
+      "professor": "ISMAEL MORENO FLORES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 15:50 A 17:30 A1-COM304 ;\nJU 15:50 A 17:30 A1-COM301",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7978",
+      "nrc": "7978",
+      "courseId": "PTEC105",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "PAULO QUINSACARA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 12:10 A 13:50 A2-SAL502",
+      "linkedNrcRaw": "13025(TAL)\n,\n7985(TAL),\n7983(TAL),\n7981(TAL),\n7982(TAL),\n7984(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7979",
+      "nrc": "7979",
+      "courseId": "PTEC105",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "PAULO QUINSACARA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 14:00 A 15:40 -",
+      "linkedNrcRaw": "13025(TAL)\n,\n7985(TAL),\n7983(TAL),\n7981(TAL),\n7982(TAL),\n7984(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7980",
+      "nrc": "7980",
+      "courseId": "PTEC105",
+      "sectionLabel": "552",
+      "activityType": "TEO",
+      "professor": "PAULO QUINSACARA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 15:40 A1-SAL005",
+      "linkedNrcRaw": "13025(TAL)\n,\n7985(TAL),\n7983(TAL),\n7981(TAL),\n7982(TAL),\n7984(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7981",
+      "nrc": "7981",
+      "courseId": "PTEC105",
+      "sectionLabel": "553",
+      "activityType": "TAL",
+      "professor": "PAULO QUINSACARA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 08:30 A 12:00 A1-COM305",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7982",
+      "nrc": "7982",
+      "courseId": "PTEC105",
+      "sectionLabel": "554",
+      "activityType": "TAL",
+      "professor": "PAULO QUINSACARA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 15:50 A 19:20 A1-COM305",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7983",
+      "nrc": "7983",
+      "courseId": "PTEC105",
+      "sectionLabel": "555",
+      "activityType": "TAL",
+      "professor": "PAULO QUINSACARA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 15:50 A 19:20 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7984",
+      "nrc": "7984",
+      "courseId": "PTEC105",
+      "sectionLabel": "556",
+      "activityType": "TAL",
+      "professor": "PAULO QUINSACARA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 24,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 15:50 A 19:20 A1-COM003",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7985",
+      "nrc": "7985",
+      "courseId": "PTEC105",
+      "sectionLabel": "557",
+      "activityType": "TAL",
+      "professor": "PAULO QUINSACARA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 15:50 A 19:20 A1-COM401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13024",
+      "nrc": "13024",
+      "courseId": "PTEC105",
+      "sectionLabel": "558",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 12:10 A 13:50 A1-SAL402",
+      "linkedNrcRaw": "13025(TAL)\n,\n7985(TAL),\n7983(TAL),\n7981(TAL),\n7982(TAL),\n7984(TAL)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13025",
+      "nrc": "13025",
+      "courseId": "PTEC105",
+      "sectionLabel": "559",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 15:50 A 19:20 A1-COM402",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3049",
+      "nrc": "3049",
+      "courseId": "ING129",
+      "sectionLabel": "556",
+      "activityType": "TEO",
+      "professor": "PAULA LANZAROTTI LANZAROTTI\nCAPDEVILLE",
+      "modality": "BLENDED",
+      "vacancies": 35,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 11:05 A2-SAL203",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3050",
+      "nrc": "3050",
+      "courseId": "ING129",
+      "sectionLabel": "557",
+      "activityType": "TEO",
+      "professor": "LORENA SOLAR ROSALES",
+      "modality": "BLENDED",
+      "vacancies": 35,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 11:05 A2-SAL303",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3051",
+      "nrc": "3051",
+      "courseId": "ING129",
+      "sectionLabel": "558",
+      "activityType": "TEO",
+      "professor": "ANA MARIA MUNOZ RAMIREZ",
+      "modality": "BLENDED",
+      "vacancies": 35,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 08:30 A 11:05 A2-SAL403",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3065",
+      "nrc": "3065",
+      "courseId": "ING249",
+      "sectionLabel": "556",
+      "activityType": "TEO",
+      "professor": "CRISTIAN LEONARDO ARRIAGADA\nDIAZ",
+      "modality": "BLENDED",
+      "vacancies": 35,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 08:30 A 11:05 A2-SAL302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3066",
+      "nrc": "3066",
+      "courseId": "ING249",
+      "sectionLabel": "557",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "BLENDED",
+      "vacancies": 35,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 08:30 A 11:05 A2-SAL303",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3067",
+      "nrc": "3067",
+      "courseId": "ING249",
+      "sectionLabel": "558",
+      "activityType": "TEO",
+      "professor": "PAULA LANZAROTTI LANZAROTTI\nCAPDEVILLE",
+      "modality": "BLENDED",
+      "vacancies": 35,
+      "meetings": [],
+      "scheduleRaw": "MI 11:15 A 13:50 A2-SAL203",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2049",
+      "nrc": "2049",
+      "courseId": "CFIS310",
+      "sectionLabel": "564",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A2-SAL407 ; JU\n17:40 A 19:20 - ; MI 14:00 A 15:40\nA2-SAL302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2050",
+      "nrc": "2050",
+      "courseId": "CFIS310",
+      "sectionLabel": "565",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 14:00 A 15:40 A2-SAL301 ; JU\n17:40 A 19:20 - ; LU 14:00 A 15:40\nA2-SAL307",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2051",
+      "nrc": "2051",
+      "courseId": "CFIS310",
+      "sectionLabel": "566",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A2-SAL408 ; MI\n14:00 A 15:40 A2-SAL205 ; JU\n17:40 A 19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2052",
+      "nrc": "2052",
+      "courseId": "CFIS310",
+      "sectionLabel": "567",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 14:00 A 15:40 A2-SAL402 ; JU\n17:40 A 19:20 - ; LU 14:00 A 15:40\nA2-SAL205",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2053",
+      "nrc": "2053",
+      "courseId": "CFIS310",
+      "sectionLabel": "568",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 14:00 A 15:40 A2-SAL201 ; LU\n14:00 A 15:40 A2-SAL405 ; JU\n17:40 A 19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2054",
+      "nrc": "2054",
+      "courseId": "CFIS310",
+      "sectionLabel": "569",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A2-SAL305 ; MI\n14:00 A 15:40 A2-SAL304 ; JU\n17:40 A 19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2055",
+      "nrc": "2055",
+      "courseId": "CFIS310",
+      "sectionLabel": "570",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A2-SAL201 ; JU\n17:40 A 19:20 - ; MI 14:00 A 15:40\nA2-SAL305",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2059",
+      "nrc": "2059",
+      "courseId": "CFIS310",
+      "sectionLabel": "574",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4,
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A2-SAL306 ; LU\n17:40 A 19:20 - ; MI 14:00 A 15:40\nA2-SAL405",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2061",
+      "nrc": "2061",
+      "courseId": "CFIS328",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 12:10 A 13:50 A2-SAL307 ; MI\n12:10 A 13:50 A2-SAL404",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2062",
+      "nrc": "2062",
+      "courseId": "CFIS328",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 12:10 A 13:50 A2-SAL401 ; LU\n12:10 A 13:50 A2-SAL401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2063",
+      "nrc": "2063",
+      "courseId": "CFIS328",
+      "sectionLabel": "552",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A2-SAL301 ; VI\n14:00 A 15:40 A2-SAL308",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2064",
+      "nrc": "2064",
+      "courseId": "CFIS328",
+      "sectionLabel": "553",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 15:40 A2-SAL202 ; VI\n14:00 A 15:40 A2-SAL407",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2065",
+      "nrc": "2065",
+      "courseId": "CFIS328",
+      "sectionLabel": "554",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 15:50 A 17:30 A2-SAL205 ; VI\n15:50 A 17:30 A2-SAL205",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2078",
+      "nrc": "2078",
+      "courseId": "CFIS332",
+      "sectionLabel": "561",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 17:40 A 19:20 - ; LU 08:30 A\n10:10 A1-SAL003 ; MI 08:30 A\n10:10 A1-SAL001",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2079",
+      "nrc": "2079",
+      "courseId": "CFIS332",
+      "sectionLabel": "562",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 17:40 A 19:20 - ; LU 10:20 A\n12:00 A2-SAL308 ; MI 10:20 A\n12:00 A2-SAL401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2080",
+      "nrc": "2080",
+      "courseId": "CFIS332",
+      "sectionLabel": "563",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 10:20 A 12:00 A2-SAL306 ; JU\n17:40 A 19:20 - ; MI 10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2081",
+      "nrc": "2081",
+      "courseId": "CFIS332",
+      "sectionLabel": "564",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 17:40 A 19:20 - ; LU 12:10 A\n13:50 A2-SAL301 ; MI 12:10 A\n13:50 A2-SAL301",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2082",
+      "nrc": "2082",
+      "courseId": "CFIS332",
+      "sectionLabel": "565",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 17:40 A 19:20 - ; LU 12:10 A\n13:50 A2-SAL407 ; MI 12:10 A\n13:50 A1-SAL005",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2085",
+      "nrc": "2085",
+      "courseId": "CFIS332",
+      "sectionLabel": "568",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4,
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 17:40 A 19:20 - ; MI 14:00 A\n15:40 A1-SAL003 ; LU 14:00 A\n15:40 A2-SAL308",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2088",
+      "nrc": "2088",
+      "courseId": "CFIS344",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 12:10 A 13:50 A2-SAL201 ; MA\n17:40 A 19:20 - ; MI 12:10 A 13:50\nA2-SAL204",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2089",
+      "nrc": "2089",
+      "courseId": "CFIS344",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 12:10 A 13:50 A1-SAL001 ; MA\n17:40 A 19:20 - ; LU 12:10 A 13:50\nA2-SAL305",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2090",
+      "nrc": "2090",
+      "courseId": "CFIS344",
+      "sectionLabel": "552",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 17:40 A 19:20 - ; VI 14:00 A\n15:40 A2-SAL205 ; LU 14:00 A\n15:40 A2-SAL401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-2091",
+      "nrc": "2091",
+      "courseId": "CFIS344",
+      "sectionLabel": "553",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 17:40 A 19:20 - ; VI 14:00 A\n15:40 A2-SAL301 ; LU 14:00 A\n15:40 A2-SAL309",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13876",
+      "nrc": "13876",
+      "courseId": "CINF1P07",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "RODRIGO HERNAN DIAZ MIRANDA",
+      "modality": "VIRTUAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "SA",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 08:30 A 10:10 - ; SA 08:30 A\n12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13877",
+      "nrc": "13877",
+      "courseId": "CINF1P11",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "PEDRO PAULO QUIROZ ARAYA",
+      "modality": "VIRTUAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 08:30 A 10:10 - ; LU 08:30 A\n10:10 - ; MI 08:30 A 10:10 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13878",
+      "nrc": "13878",
+      "courseId": "CINF1P12",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "PABLO HERNAN SCHWARZENBERG\nRIVEROS",
+      "modality": "VIRTUAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 17:30 - ; VI 10:20 A\n12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13879",
+      "nrc": "13879",
+      "courseId": "CINF1P13",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 10:20 A 12:55 - ; LU 14:00 A\n16:35 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13875",
+      "nrc": "13875",
+      "courseId": "CINF1P16",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 17:40 A 19:20 - ; VI 15:50 A\n19:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7905",
+      "nrc": "7905",
+      "courseId": "CINF101",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 15:40 - ; JU 14:00 A\n15:40 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7906",
+      "nrc": "7906",
+      "courseId": "CINF101",
+      "sectionLabel": "551",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 12:10 A 13:50 A2-SAL203 ; JU\n12:10 A 13:50 A2-SAL403",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7907",
+      "nrc": "7907",
+      "courseId": "CINF101",
+      "sectionLabel": "552",
+      "activityType": "TAL",
+      "professor": "MONICA ROSA VILLANUEVA ILUFI",
+      "modality": "PRESENCIAL",
+      "vacancies": 24,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 10:20 A 12:00 A1-SAL301 ; JU\n10:20 A 12:00 A1-SAL004",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7908",
+      "nrc": "7908",
+      "courseId": "CINF101",
+      "sectionLabel": "553",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 24,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 10:20 A 12:00 A1-SAL302 ; JU\n10:20 A 12:00 A1-SAL006",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7909",
+      "nrc": "7909",
+      "courseId": "CINF101",
+      "sectionLabel": "554",
+      "activityType": "TAL",
+      "professor": "MONICA ROSA VILLANUEVA ILUFI",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 08:30 A 10:10 A1-SAL402 ; MA\n08:30 A 10:10 A2-SAL304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7910",
+      "nrc": "7910",
+      "courseId": "CINF101",
+      "sectionLabel": "555",
+      "activityType": "TAL",
+      "professor": "JACQUELINE KOHLER\nCASASEMPERE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 10:10 A1-SAL003 ; JU\n08:30 A 10:10 A1-SAL401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7911",
+      "nrc": "7911",
+      "courseId": "CINF102",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 10:20 A 12:00 A1-COM302 ; MI\n12:10 A 13:50 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7912",
+      "nrc": "7912",
+      "courseId": "CINF102",
+      "sectionLabel": "551",
+      "activityType": "TAL",
+      "professor": "ERNESTO VIVANCO TAPIA",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 12:10 A 13:50 A1-COM401 ; VI\n12:10 A 13:50 A1-COM304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7913",
+      "nrc": "7913",
+      "courseId": "CINF102",
+      "sectionLabel": "552",
+      "activityType": "TAL",
+      "professor": "ERNESTO VIVANCO TAPIA",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 10:20 A 12:00 A1-COM302 ;\nJU 10:20 A 12:00 A1-COM303",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7914",
+      "nrc": "7914",
+      "courseId": "CINF102",
+      "sectionLabel": "553",
+      "activityType": "TAL",
+      "professor": "ERNESTO VIVANCO TAPIA",
+      "modality": "PRESENCIAL",
+      "vacancies": 28,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 10:20 A 12:00 A2-COM501 ; VI\n10:20 A 12:00 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7915",
+      "nrc": "7915",
+      "courseId": "CINF102",
+      "sectionLabel": "554",
+      "activityType": "TAL",
+      "professor": "ERNESTO VIVANCO TAPIA",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 10:10 A1-SAL002 ; JU\n08:30 A 10:10 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7916",
+      "nrc": "7916",
+      "courseId": "CINF102",
+      "sectionLabel": "555",
+      "activityType": "TAL",
+      "professor": "ERNESTO VIVANCO TAPIA",
+      "modality": "PRESENCIAL",
+      "vacancies": 24,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 08:30 A 10:10 A1-COM003 ; VI\n08:30 A 10:10 A1-SAL402",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7917",
+      "nrc": "7917",
+      "courseId": "CINF104",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "PABLO HERNAN SCHWARZENBERG\nRIVEROS",
+      "modality": "PRESENCIAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 15:40 A1-SAL003 ; JU\n14:00 A 15:40 A1-SAL003",
+      "linkedNrcRaw": "7921(LAB),\n7922(LAB),\n7919(LAB),\n7920(LAB)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7918",
+      "nrc": "7918",
+      "courseId": "CINF104",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "PABLO HERNAN SCHWARZENBERG\nRIVEROS",
+      "modality": "PRESENCIAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 10:20 A 12:00 A1-SAL003 ; JU\n10:20 A 12:00 A1-SAL003",
+      "linkedNrcRaw": "7921(LAB),\n7922(LAB),\n7919(LAB),\n7920(LAB)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7919",
+      "nrc": "7919",
+      "courseId": "CINF104",
+      "sectionLabel": "552",
+      "activityType": "LAB",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 14:00 A 15:40 A1-COM301",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7920",
+      "nrc": "7920",
+      "courseId": "CINF104",
+      "sectionLabel": "553",
+      "activityType": "LAB",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 12:10 A 13:50 A1-COM301",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7921",
+      "nrc": "7921",
+      "courseId": "CINF104",
+      "sectionLabel": "554",
+      "activityType": "LAB",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 12:10 A 13:50 A1-COM301",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7922",
+      "nrc": "7922",
+      "courseId": "CINF104",
+      "sectionLabel": "555",
+      "activityType": "LAB",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 15:50 A 17:30 A1-COM302",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7923",
+      "nrc": "7923",
+      "courseId": "CINF104",
+      "sectionLabel": "556",
+      "activityType": "TEO",
+      "professor": "PABLO HERNAN SCHWARZENBERG\nRIVEROS",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 10:10 A1-SAL405 ; JU\n08:30 A 10:10 A2-SAL502",
+      "linkedNrcRaw": "7921(LAB),\n7922(LAB),\n7919(LAB),\n7920(LAB)",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7924",
+      "nrc": "7924",
+      "courseId": "CINF105",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "JOHN RIOS GRIEGO",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 08:30 A 10:10 A2-SAL202 ; LU\n08:30 A 10:10 A1-SAL005",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7925",
+      "nrc": "7925",
+      "courseId": "CINF105",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "GUSTAVO ESTEBAN GATICA\nGONZALEZ",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 10:20 A 12:00 A2-SAL301 ; MA\n10:20 A 12:00 A2-SAL304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7926",
+      "nrc": "7926",
+      "courseId": "CINF105",
+      "sectionLabel": "552",
+      "activityType": "TEO",
+      "professor": "GUSTAVO ESTEBAN GATICA\nGONZALEZ",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 08:30 A 10:10 A2-SAL407 ; JU\n08:30 A 10:10 A2-SAL404",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7927",
+      "nrc": "7927",
+      "courseId": "CINF108",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 180,
+      "meetings": [],
+      "scheduleRaw": "",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7928",
+      "nrc": "7928",
+      "courseId": "CINF109",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 15:50 A 17:30 - ; MA 15:50 A\n17:30 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7929",
+      "nrc": "7929",
+      "courseId": "CINF109",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "MAURICIO OLIVER PIZARRO LEYTON",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 15:40 - ; JU 14:00 A\n15:40 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7930",
+      "nrc": "7930",
+      "courseId": "CINF110",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "JORGE HUMBERTO SABATTIN\nORTEGA",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            2,
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 15:50 A 19:20 - ; MA 10:20 A\n12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-7931",
+      "nrc": "7931",
+      "courseId": "CINF110",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "JOHN RIOS GRIEGO",
+      "modality": "VIRTUAL",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 15:40 - ; JU 08:30 A\n12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3545",
+      "nrc": "3545",
+      "courseId": "FMMP012",
+      "sectionLabel": "569",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            2,
+            6
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 17:40 A 19:20 - ; MA 10:20 A\n12:00 A2-SAL202 ; MI 10:20 A\n12:00 A2-SAL301 ; JU 10:20 A\n12:00 A2-SAL201",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3546",
+      "nrc": "3546",
+      "courseId": "FMMP012",
+      "sectionLabel": "570",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2,
+            7
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 10:20 A 12:00 A2-SAL405 ; MI\n10:20 A 12:00 A2-SAL308 ; MA\n10:20 A 12:00 A2-SAL204 ; MI\n19:30 A 21:10 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3547",
+      "nrc": "3547",
+      "courseId": "FMMP012",
+      "sectionLabel": "571",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            1,
+            6
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 17:40 A 19:20 - ; JU 08:30 A\n10:10 A2-SAL306 ; MA 08:30 A\n10:10 A2-SAL405 ; MI 08:30 A\n10:10 A2-SAL401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3548",
+      "nrc": "3548",
+      "courseId": "FMMP012",
+      "sectionLabel": "572",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            2,
+            7
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 10:20 A 12:00 A2-SAL306 ; MI\n19:30 A 21:10 - ; MA 10:20 A 12:00\nA2-SAL405 ; JU 10:20 A 12:00\nA2-SAL307",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3549",
+      "nrc": "3549",
+      "courseId": "FMMP012",
+      "sectionLabel": "573",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            1,
+            6
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 08:30 A 10:10 A2-SAL405 ; MI\n17:40 A 19:20 - ; MA 08:30 A 10:10\nA2-SAL305 ; JU 08:30 A 10:10\nA2-SAL307",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3550",
+      "nrc": "3550",
+      "courseId": "FMMP012",
+      "sectionLabel": "574",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2,
+            7
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 10:20 A 12:00 A2-SAL309 ; MI\n10:20 A 12:00 A2-SAL402 ; MI\n19:30 A 21:10 - ; MA 10:20 A 12:00\nA2-SAL401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3551",
+      "nrc": "3551",
+      "courseId": "FMMP012",
+      "sectionLabel": "575",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            1,
+            6
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 08:30 A 10:10 A2-SAL408 ; MI\n17:40 A 19:20 - ; MA 08:30 A 10:10\nA2-SAL309 ; JU 08:30 A 10:10\nA2-SAL305",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3557",
+      "nrc": "3557",
+      "courseId": "FMMP112",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            7
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 15:50 A 17:30 A2-SAL307 ; MA\n15:50 A 17:30 A2-SAL401 ; LU\n19:30 A 21:10 - ; JU 15:50 A 17:30\nA2-SAL205",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3558",
+      "nrc": "3558",
+      "courseId": "FMMP112",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 14:00 A 15:40 A2-SAL307 ; VI\n17:40 A 19:20 - ; MA 14:00 A 15:40\nA2-SAL405 ; JU 14:00 A 15:40\nA2-SAL202",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3559",
+      "nrc": "3559",
+      "courseId": "FMMP112",
+      "sectionLabel": "552",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            7
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 19:30 A 21:10 - ; JU 15:50 A\n17:30 A2-SAL405 ; MI 15:50 A\n17:30 A2-SAL308 ; MA 15:50 A\n17:30 A2-SAL405",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13913",
+      "nrc": "13913",
+      "courseId": "EFP027",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "JOSE LUIS LORENZO ALVARADO\nCAMPOS",
+      "modality": "E-LEARNING",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "SA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "SA 10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3575",
+      "nrc": "3575",
+      "courseId": "FMMP212",
+      "sectionLabel": "564",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 10:20 A 12:00 A2-SAL301 ; LU\n17:40 A 19:20 - ; JU 10:20 A 12:00\nA2-SAL301 ; MI 10:20 A 12:00\nA1-SAL401",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3576",
+      "nrc": "3576",
+      "courseId": "FMMP212",
+      "sectionLabel": "565",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 12:10 A 13:50 A2-SAL306 ; MI\n12:10 A 13:50 A2-SAL407 ; LU\n17:40 A 19:20 - ; MA 12:10 A 13:50\nA2-SAL309",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3577",
+      "nrc": "3577",
+      "courseId": "FMMP212",
+      "sectionLabel": "566",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 14:00 A 15:40 A2-SAL202 ; JU\n14:00 A 15:40 A2-SAL308 ; LU\n17:40 A 19:20 - ; MA 14:00 A 15:40\nA2-SAL202",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3578",
+      "nrc": "3578",
+      "courseId": "FMMP212",
+      "sectionLabel": "567",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 17:40 A 19:20 - ; MI 10:20 A\n12:00 A2-SAL309 ; MA 10:20 A\n12:00 A2-SAL402 ; JU 10:20 A\n12:00 A2-SAL306",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3579",
+      "nrc": "3579",
+      "courseId": "FMMP212",
+      "sectionLabel": "568",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            3
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            3
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 12:10 A 13:50 A2-SAL305 ; LU\n17:40 A 19:20 - ; MA 12:10 A 13:50\nA2-SAL308 ; JU 12:10 A 13:50\nA2-SAL307",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3580",
+      "nrc": "3580",
+      "courseId": "FMMP212",
+      "sectionLabel": "569",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            4
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 15:40 A2-SAL301 ; LU\n17:40 A 19:20 - ; MI 14:00 A 15:40\nA2-SAL407 ; JU 14:00 A 15:40\nA2-SAL307",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13914",
+      "nrc": "13914",
+      "courseId": "EFP028",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "LORENA DEL PILAR MUNOZ DEL\nCAMPO",
+      "modality": "E-LEARNING",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "SA",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "SA 08:30 A 10:20 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3585",
+      "nrc": "3585",
+      "courseId": "FMMP312",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            5,
+            6
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 15:50 A 17:30 A2-SAL205 ; JU\n17:40 A 19:20 - ; MI 15:50 A 17:30\nA2-SAL405 ; JU 15:50 A 17:30\nA2-SAL308",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3586",
+      "nrc": "3586",
+      "courseId": "FMMP312",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            5,
+            6
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            5
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 17:40 A 19:20 - ; MA 15:50 A\n17:30 A2-SAL301 ; MI 15:50 A\n17:30 A2-SAL305 ; JU 15:50 A\n17:30 A2-SAL301",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13915",
+      "nrc": "13915",
+      "courseId": "EFP035",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "MARIA JESUS CESPEDES STUVEN",
+      "modality": "E-LEARNING",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "SA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "SA 10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3591",
+      "nrc": "3591",
+      "courseId": "FMSP316",
+      "sectionLabel": "551",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            7
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 10:20 A 12:00 - ; MI 10:20 A\n12:00 - ; LU 19:30 A 21:10 - ; MA\n10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-13916",
+      "nrc": "13916",
+      "courseId": "EFP036",
+      "sectionLabel": "550",
+      "activityType": "TEO",
+      "professor": "LORENA ANDREA PAREDES\nBUZETA",
+      "modality": "E-LEARNING",
+      "vacancies": 60,
+      "meetings": [
+        {
+          "day": "SA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "SA 10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3593",
+      "nrc": "3593",
+      "courseId": "FMSP316",
+      "sectionLabel": "553",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            7
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 10:20 A 12:00 - ; MI 10:20 A\n12:00 - ; LU 19:30 A 21:10 - ; MA\n10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3594",
+      "nrc": "3594",
+      "courseId": "FMSP316",
+      "sectionLabel": "554",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            7
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 10:10 - ; MI 08:30 A\n10:10 - ; VI 19:30 A 21:10 - ; JU\n08:30 A 10:10 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3595",
+      "nrc": "3595",
+      "courseId": "FMSP316",
+      "sectionLabel": "555",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "LU",
+          "blocks": [
+            7
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 10:20 A 12:00 - ; MI 10:20 A\n12:00 - ; LU 19:30 A 21:10 - ; MA\n10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3596",
+      "nrc": "3596",
+      "courseId": "FMSP316",
+      "sectionLabel": "556",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            2
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            7
+          ]
+        },
+        {
+          "day": "MA",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 10:20 A 12:00 - ; MI 10:20 A\n12:00 - ; VI 19:30 A 21:10 - ; MA\n10:20 A 12:00 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-3592",
+      "nrc": "3592",
+      "courseId": "FMSP316",
+      "sectionLabel": "552",
+      "activityType": "TEO",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "VIRTUAL",
+      "vacancies": 45,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "MI",
+          "blocks": [
+            1
+          ]
+        },
+        {
+          "day": "VI",
+          "blocks": [
+            7
+          ]
+        },
+        {
+          "day": "JU",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 08:30 A 10:10 - ; MI 08:30 A\n10:10 - ; VI 19:30 A 21:10 - ; JU\n08:30 A 10:10 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11172",
+      "nrc": "11172",
+      "courseId": "ACAD101",
+      "sectionLabel": "550",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 17:30 A2-AIE501",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11173",
+      "nrc": "11173",
+      "courseId": "ACAD101",
+      "sectionLabel": "551",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 17:30 A1-SAL004",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11174",
+      "nrc": "11174",
+      "courseId": "ACAD101",
+      "sectionLabel": "552",
+      "activityType": "TAL",
+      "professor": "MARIANA BEATRIZ SEDANO\nVINCOURT",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 15:50 A 19:20 A1-SAL003",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11175",
+      "nrc": "11175",
+      "courseId": "ACAD101",
+      "sectionLabel": "553",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 14:00 A 17:30 A2-SAL202",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11176",
+      "nrc": "11176",
+      "courseId": "ACAD101",
+      "sectionLabel": "554",
+      "activityType": "TAL",
+      "professor": "MACARENA NICOLE PAEZ ARANDA",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 14:00 A 17:30 A2-AIE501",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11177",
+      "nrc": "11177",
+      "courseId": "ACAD101",
+      "sectionLabel": "555",
+      "activityType": "TAL",
+      "professor": "MARIA JOSE RIVERA JOFRE",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "JU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "JU 14:00 A 17:30 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11178",
+      "nrc": "11178",
+      "courseId": "ACAD101",
+      "sectionLabel": "556",
+      "activityType": "TAL",
+      "professor": "CLAUDIA GWYNN MOYA",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MA",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "MA 14:00 A 17:30 -",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11188",
+      "nrc": "11188",
+      "courseId": "ACAD101",
+      "sectionLabel": "566",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            5
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 15:50 A 19:20 A2-SAL304",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11204",
+      "nrc": "11204",
+      "courseId": "ACAD103",
+      "sectionLabel": "552",
+      "activityType": "TAL",
+      "professor": "IGNACIO GAJARDO LARRANAGA",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 08:30 A 12:00 A2-SAL306",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11205",
+      "nrc": "11205",
+      "courseId": "ACAD103",
+      "sectionLabel": "553",
+      "activityType": "TAL",
+      "professor": "FELIPE DANIEL EDUARDO FICA\nCIFUENTES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "MI",
+          "blocks": [
+            1
+          ]
+        }
+      ],
+      "scheduleRaw": "MI 08:30 A 12:00 A1-SAL004",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11206",
+      "nrc": "11206",
+      "courseId": "ACAD103",
+      "sectionLabel": "554",
+      "activityType": "TAL",
+      "professor": "FELIPE DANIEL EDUARDO FICA\nCIFUENTES",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 17:30 A1-SAL004",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11207",
+      "nrc": "11207",
+      "courseId": "ACAD103",
+      "sectionLabel": "555",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "LU",
+          "blocks": [
+            4
+          ]
+        }
+      ],
+      "scheduleRaw": "LU 14:00 A 17:30 A2-SAL403",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    },
+    {
+      "id": "NRC-11208",
+      "nrc": "11208",
+      "courseId": "ACAD103",
+      "sectionLabel": "556",
+      "activityType": "TAL",
+      "professor": "POR DEFINIR POR DEFINIR",
+      "modality": "PRESENCIAL",
+      "vacancies": 30,
+      "meetings": [
+        {
+          "day": "VI",
+          "blocks": [
+            2
+          ]
+        }
+      ],
+      "scheduleRaw": "VI 10:20 A 13:50 A1-SAL004",
+      "linkedNrcRaw": "",
+      "linkedSections": [],
+      "semester": "2026-1"
+    }
+  ],
+  "meta": {
+    "rowsRead": 160,
+    "rawRowsTotal": 160
+  }
+}
