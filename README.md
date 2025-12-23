@@ -1,43 +1,48 @@
 # UNAB Horarios
+ 
+ Este proyecto permite a los estudiantes de la Universidad Andrés Bello consultar y gestionar los horarios de los ramos de su semestre. El sistema muestra los cursos disponibles, sus secciones y los horarios correspondientes, permitiendo seleccionar las secciones sin generar conflictos.
+ 
+## Requisitos
+ - Node.js 18 o superior (se probó con Node 18+/20+).
+ - npm 9 o superior.
+ 
+-## Instalación
++> **Opcional (solo si usarás el parser de PDF):** Python 3.11+ y un entorno virtual (`venv`) para ejecutar `scripts/parse_unab_pdf.py`.
+ 
+## Instalación y ejecución
 
-Este proyecto permite a los estudiantes de la Universidad Andrés Bello consultar y gestionar los horarios de los ramos de su semestre. El sistema muestra los cursos disponibles, sus secciones y los horarios correspondientes, permitiendo seleccionar las secciones sin generar conflictos.
-
-## Uso
-
-1. **Selecciona el semestre**: Usa el selector para elegir el semestre actual.
-2. **Buscar ramos**: Ingresa el nombre o código de un ramo en el campo de búsqueda.
-3. **Selecciona secciones**: Elige una o más secciones para añadirlas a tu horario. Puedes seleccionar tanto los teóricos como los prácticos de un mismo ramo.
-4. **Ver horarios**: Visualiza tus secciones seleccionadas en la vista semanal de horarios.
-
-## Instalación
-
-1. Clona el repositorio:
+1. **Clona el repositorio**
+    ```bash
+    git clone https://github.com/usuario/unab-horarios.git
+   cd unab-horarios
+   ```
+ 
+2. **Instala dependencias de Node**
    ```bash
-   git clone https://github.com/usuario/unab-horarios.git
+   npm install
+   ```
+ 
+3. ** Prepara el entorno Python para el parser de PDFs**
+   ```bash
+   python -m venv venv
+   # En Windows
+   .\venv\Scripts\activate
+   # En macOS/Linux
+   source venv/bin/activate
+   # Instala dependencias si tu script lo requiere
+   # pip install -r requirements.txt
+   ```
 
-2. Accede al directorio del proyecto:
-    ```bash
-    cd unab-horarios
-
-3. configura entorno virtual en python 3.11.x
-    ```bash
-    python -m venv venv
-
-4. Activa el entorno virtual
-    ```bash
-    En windows:
-        .\venv\Scripts\activate
-    En macOS/Linux:
-        source venv/bin/activate
-
-5. Instala dependencias:
-    ```bash
-    npm install
-
-6. Ejecuta el proyecto: 
-    ```bash
-    npm run dev
-
-7. Abre la app en el navegador con:
-    ```bash
-    http://localhost:3000
+4. **Inicia el servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
+   La app quedará disponible en `http://localhost:3000`.
+ 
+ 
+## Uso de la app
+ 1. **Selecciona el semestre** desde el combo superior.
+ 2. **Busca ramos** por código o nombre.
+ 3. **Elige secciones**: puedes escoger un teórico y un taller/práctico por ramo (se marca en verde lo seleccionado).
+ 4. **Revisa el horario semanal**: cada ramo se muestra con un color único y el tipo de actividad (TEO/TAL, etc.).
+ 5. **Guarda tu horario (local)**: pulsa “Guardar horario (local)” para almacenar tu selección en el navegador y recuperarla luego (mismo semestre).
