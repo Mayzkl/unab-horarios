@@ -42,7 +42,12 @@ export default function CourseSidebar({
                 {opts.map((s) => (
                   <button
                     key={s.id}
-                    className="w-full text-left rounded-xl border p-2 hover:bg-zinc-50"
+                    className={[
+                      "w-full text-left rounded-xl border p-2 transition",
+                      selected?.includes(s.id)
+                        ? "bg-emerald-50 border-emerald-400 text-emerald-900"
+                        : "hover:bg-zinc-50",
+                    ].join(" ")}
                     onMouseEnter={() => onHoverSection(s.id)}
                     onMouseLeave={() => onHoverSection(null)}
                     onClick={() => onSelectSection(c.id, s.id)}
