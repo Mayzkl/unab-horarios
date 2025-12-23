@@ -7,6 +7,27 @@ import ScheduleGrid from "@/components/ScheduleGrid";
 
 const STORAGE_KEY = "unab-horarios/selection";
 
+type DatasetOption = {
+  id: string;
+  label: string;
+  path: string;
+};
+
+// Catálogo de datasets disponibles (extender con nuevas carreras/semestres)
+const DATASET_OPTIONS: DatasetOption[] = [
+  {
+    id: "icinf-2026-1",
+    label: "Ing. Civil Informática · 2026-1",
+    path: "/data/data_unab_normalized.json",
+  },
+  // Ejemplo para futuros datasets (dejar comentado):
+  // {
+  //   id: "otra-carrera-2026-1",
+  //   label: "Otra carrera · 2026-1",
+  //   path: "/data/data_unab_otra_carrera_2026_1.json",
+  // },
+];
+
 const COURSE_COLOR_PALETTE = [
   "hsl(4 82% 47%)",   // rojo
   "hsl(27 93% 55%)",  // naranja
@@ -34,6 +55,7 @@ type NormalizedData = {
 };
 
 export default function AppShell() {
+  const [datasetId, setDatasetId] = useState<string>(DATASET_OPTIONS[0].id);
   const [data, setData] = useState<NormalizedData | null>(null);
   const [semester, setSemester] = useState<string>("");
   const [query, setQuery] = useState<string>("");
@@ -45,9 +67,11 @@ export default function AppShell() {
 
   // Cargar datos desde la API
   useEffect(() => {
+    const dataset = DATASET_OPTIONS.find((d) => d.id === datasetId) ?? DATASET_OPTIONS[0];
+
     (async () => {
-      const res = await fetch("/data/data_unab_normalized.json");
-      if (!res.ok) throw new Error("No se pudo cargar data_unab_normalized.json");
+      const res = await fetch(dataset.path);
+      if (!res.ok) throw new Error(`No se pudo cargar ${dataset.path}`);
       const json = await res.json();
       setData(json);
 
@@ -55,23 +79,31 @@ export default function AppShell() {
       const first = Object.keys(json.semesters ?? {})[0] ?? "";
       setSemester(first);
 
-      // Intentar restaurar guardado local si coincide el semestre
+      // Intentar restaurar guardado local si coincide dataset y semestre
       try {
         const raw = localStorage.getItem(STORAGE_KEY);
         if (raw) {
           const parsed = JSON.parse(raw);
-          if (parsed.semester === first && parsed.selectedByCourse) {
+          if (
+            parsed.datasetId === dataset.id &&
+            parsed.semester === first &&
+            parsed.selectedByCourse
+          ) {
             setSelectedByCourse(parsed.selectedByCourse);
+            return;
           }
         }
       } catch {
         // ignoramos errores de parseo
       }
+
+      // Si no hay coincidencia en storage, limpiar selección
+      setSelectedByCourse({});
     })().catch((e) => {
       console.error(e);
       alert("Error cargando el JSON.");
     });
-  }, []);
+  }, [datasetId]);
 
   // Filtra los cursos por semestre y búsqueda
   const courses = useMemo(() => {
@@ -104,8 +136,7 @@ export default function AppShell() {
     coursesList.forEach((course, idx) => {
       const paletteColor = COURSE_COLOR_PALETTE[idx % COURSE_COLOR_PALETTE.length];
       colors[course.id] = paletteColor ?? fallbackColorFromString(course.id);
-    }
-    );
+    });
     return colors;
   }, [data]);
 
@@ -176,6 +207,7 @@ export default function AppShell() {
 
   function onSaveSchedule() {
     const payload = {
+      datasetId,
       semester,
       selectedByCourse,
       savedAt: new Date().toISOString(),
@@ -202,6 +234,19 @@ export default function AppShell() {
       <div className="max-w-7xl mx-auto p-6 grid grid-cols-12 gap-6">
         <aside className="col-span-12 lg:col-span-4 space-y-4">
           <div className="bg-white rounded-2xl p-4 border">
+            <div className="text-sm font-semibold mb-2">Carrera / Dataset</div>
+            <select
+              value={datasetId}
+              onChange={(e) => setDatasetId(e.target.value)}
+              className="w-full border rounded-xl p-2 mb-3"
+            >
+              {DATASET_OPTIONS.map((opt) => (
+                <option key={opt.id} value={opt.id}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+
             <div className="text-sm font-semibold mb-2">Semestre</div>
             <select
               value={semester}
