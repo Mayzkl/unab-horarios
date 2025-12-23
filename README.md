@@ -16,21 +16,28 @@ Este proyecto permite a los estudiantes de la Universidad Andrés Bello consulta
    git clone https://github.com/usuario/unab-horarios.git
 
 2. Accede al directorio del proyecto:
+    ```bash
     cd unab-horarios
 
 3. configura entorno virtual en python 3.11.x
+    ```bash
     python -m venv venv
 
 4. Activa el entorno virtual
+    ```bash
     En windows:
         .\venv\Scripts\activate
     En macOS/Linux:
         source venv/bin/activate
 
 5. Instala dependencias:
+    ```bash
     npm install
 
 6. Ejecuta el proyecto: 
+    ```bash
     npm run dev
 
-7. Abre la app en el navegador con http://localhost:3000
+7. Abre la app en el navegador con:
+    ```bash
+    http://localhost:3000
