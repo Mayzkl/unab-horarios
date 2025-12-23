@@ -59,44 +59,77 @@ export default function AppShell() {
     return Object.fromEntries((data?.sections ?? []).map((s) => [s.id, s]));
   }, [data]);
 
+  const sectionsByNrc = useMemo(() => {
+    return Object.fromEntries((data?.sections ?? []).map((s) => [s.nrc, s]));
+  }, [data]);
+
   // Obtener solo los IDs de las secciones seleccionadas
   const selectedSectionIds = useMemo(() => {
     return Object.values(selectedByCourse).flat().filter(Boolean) as string[];
   }, [selectedByCourse]);
 
+  function resolveLinkedSections(sectionId: string): Section[] {
+    const section = sectionsById[sectionId];
+    if (!section) return [];
+
+    const linked: Section[] = [];
+
+    if (Array.isArray(section.linkedSections) && section.linkedSections.length > 0) {
+      for (const linkedSection of section.linkedSections) {
+        if (linkedSection?.id) linked.push(linkedSection);
+      }
+    }
+
+    if (section.linkedNrcRaw) {
+      const linkedNrcs = section.linkedNrcRaw.match(/\d+/g) ?? [];
+      for (const nrc of linkedNrcs) {
+        const linkedSection = sectionsByNrc[nrc];
+        if (linkedSection) linked.push(linkedSection);
+      }
+    }
+
+    const dedup = new Map(linked.map((ls) => [ls.id, ls]));
+    return Array.from(dedup.values());
+  }
+
   function onSelectSection(courseId: string, sectionId: string) {
     setSelectedByCourse((prev) => {
-      const section = sectionsById[sectionId];
-      if (!section) return prev;
+      const primary = sectionsById[sectionId];
+      const linkedSelections = resolveLinkedSections(sectionId);
 
-      const currentSelections = prev[courseId] ?? [];
-      const isAlreadySelected = currentSelections.includes(sectionId);
+      const selections = [
+        { courseId: primary?.courseId ?? courseId, sectionId },
+        ...linkedSelections.map((section) => ({
+          courseId: section.courseId,
+          sectionId: section.id,
+        })),
+      ];
 
-      // Si se vuelve a hacer click, deseleccionamos solo esa sección.
-      if (isAlreadySelected) {
-        const remaining = currentSelections.filter((id) => id !== sectionId);
-        const next = { ...prev };
-        if (remaining.length === 0) {
-          delete next[courseId];
+      const uniqueSelections = Array.from(
+        new Map(selections.map((s) => [`${s.courseId}-${s.sectionId}`, s])).values()
+      );
+
+      const shouldRemove = uniqueSelections.every(({ courseId, sectionId }) =>
+        (prev[courseId] ?? []).includes(sectionId)
+      );
+
+      const next: Record<string, string[]> = { ...prev };
+
+      for (const { courseId: cid, sectionId: sid } of uniqueSelections) {
+        const set = new Set(next[cid] ?? []);
+        if (shouldRemove) {
+          set.delete(sid);
         } else {
-          next[courseId] = remaining;
+          set.add(sid);
         }
-        return next;
+        if (set.size === 0) {
+          delete next[cid];
+        } else {
+          next[cid] = Array.from(set);
+        }
       }
 
-      // Asegurar máximo 1 sección por tipo de actividad (TEO/TAL, etc.) dentro del mismo ramo.
-      const filteredByActivity = currentSelections.filter((id) => {
-        const existing = sectionsById[id];
-        if (!existing) return true;
-        return existing.activityType !== section.activityType;
-      });
-
-      const nextSelections = [...filteredByActivity, sectionId];
-
-      return {
-        ...prev,
-        [courseId]: nextSelections,
-      };
+      return next;
     });
   }
 
