@@ -6,7 +6,7 @@ import { spawn } from "child_process";
 
 export const runtime = "nodejs"; // importante (no edge)
 
-function runPythonParser(pdfPath: string): Promise<any> {
+function runPythonParser(pdfPath: string): Promise<unknown> {
   return new Promise((resolve, reject) => {
     const scriptPath = path.join(
       process.cwd(),

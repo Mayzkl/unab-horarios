@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-50 via-white to-indigo-50 text-slate-900;
+  }
+}
+
+@media print {
+  body {
+    @apply bg-white;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .schedule-printable {
+    box-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  @page {
+    margin: 16mm;
+  }
+}
