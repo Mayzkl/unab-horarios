@@ -3,7 +3,7 @@ import { Course, Section } from "@/types/schedule";
 type Props = {
   courses: Course[];
   sections: Section[];
-  selectedSectionByCourse: Record<string, string | string[]>;
+  selectedSectionByCourse: Record<string, string[]>;
   onHoverSection: (sectionId: string | null) => void;
   onSelectSection: (courseId: string, sectionId: string) => void;
 };
@@ -31,18 +31,23 @@ export default function CourseSidebar({
                   <div className="font-semibold">{c.code}</div>
                   <div className="text-sm text-zinc-600">{c.name}</div>
                 </div>
-                {selected && (
+                {selected?.length ? (
                   <span className="text-xs bg-zinc-900 text-white px-2 py-1 rounded-full">
                     seleccionado
                   </span>
-                )}
+                ) : null}
               </div>
 
               <div className="mt-3 space-y-2">
                 {opts.map((s) => (
                   <button
                     key={s.id}
-                    className="w-full text-left rounded-xl border p-2 hover:bg-zinc-50"
+                    className={[
+                      "w-full text-left rounded-xl border p-2 transition",
+                      selected?.includes(s.id)
+                        ? "bg-emerald-50 border-emerald-400 text-emerald-900"
+                        : "hover:bg-zinc-50",
+                    ].join(" ")}
                     onMouseEnter={() => onHoverSection(s.id)}
                     onMouseLeave={() => onHoverSection(null)}
                     onClick={() => onSelectSection(c.id, s.id)}
