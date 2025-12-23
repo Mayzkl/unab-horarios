@@ -1,8 +1,7 @@
 import { DAYS, BLOCKS } from "@/lib/unabBlocks";
-import { Day, BlockIndex, Section, Course } from "@/types/schedule";
+import { Day, BlockIndex, Section } from "@/types/schedule";
 
 type Props = {
-  courses: Course[];
   sectionsById: Record<string, Section>;
   selectedSectionIds: string[];
   previewSectionId: string | null;
@@ -38,7 +37,6 @@ function hasPreviewConflict(occ: Map<string, string>, preview: Section | null) {
 }
 
 export default function ScheduleGrid({
-  courses,
   sectionsById,
   selectedSectionIds,
   previewSectionId,
