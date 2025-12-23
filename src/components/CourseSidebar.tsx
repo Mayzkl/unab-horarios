@@ -25,7 +25,7 @@ export default function CourseSidebar({
           const selected = selectedSectionByCourse[c.id];
 
           return (
-            <div key={c.id} className="bg-white rounded-2xl p-3 border">
+            <div key={c.id} className="bg-white rounded-2xl p-3 border shadow-sm">
               <div className="flex items-center justify-between">
                 <div>
                   <div className="font-semibold">{c.code}</div>

@@ -230,6 +230,10 @@ export default function AppShell() {
     }
   }
 
+  function onExportPdf() {
+    window.print();
+  }
+
 
   if (!data) {
     return (
@@ -242,8 +246,8 @@ export default function AppShell() {
   return (
     <div className="min-h-screen bg-zinc-50">
       <div className="max-w-7xl mx-auto p-6 grid grid-cols-12 gap-6">
-        <aside className="col-span-12 lg:col-span-4 space-y-4">
-          <div className="bg-white rounded-2xl p-4 border">
+        <aside className="col-span-12 lg:col-span-4 space-y-4 no-print">
+          <div className="bg-white/90 backdrop-blur rounded-2xl p-4 border shadow-sm">
             <div className="text-sm font-semibold mb-2">Carrera / Dataset</div>
             <select
               value={datasetId}
@@ -282,6 +286,21 @@ export default function AppShell() {
               Cursos: {courses.length} · Secciones visibles: {visibleSections.length}
             </div>
 
+            <div className="mt-3 grid grid-cols-1 gap-2">
+              <button
+                onClick={onSaveSchedule}
+                className="w-full rounded-xl bg-zinc-900 text-white px-3 py-2 text-sm font-semibold hover:bg-zinc-800"
+              >
+                Guardar horario (local)
+              </button>
+              <button
+                onClick={onExportPdf}
+                className="w-full rounded-xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50"
+              >
+                Exportar PDF
+              </button>
+            </div>
+
             <button
               onClick={onSaveSchedule}
               className="mt-3 w-full rounded-xl bg-zinc-900 text-white px-3 py-2 text-sm font-semibold hover:bg-zinc-800"
@@ -299,7 +318,7 @@ export default function AppShell() {
           />
         </aside>
 
-        <main className="col-span-12 lg:col-span-8 bg-white rounded-2xl p-4 border">
+        <main className="col-span-12 lg:col-span-8 bg-white rounded-2xl p-4 border shadow-sm schedule-printable">
           <ScheduleGrid
             sectionsById={sectionsById}
             coursesById={coursesById}
