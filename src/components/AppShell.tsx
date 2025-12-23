@@ -5,6 +5,15 @@ import { Course, Section } from "@/types/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
 import ScheduleGrid from "@/components/ScheduleGrid";
 
+function colorFromString(input: string) {
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = input.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const hue = Math.abs(hash) % 360;
+  return `hsl(${hue} 65% 40%)`;
+}
+
 type NormalizedData = {
   semesters: Record<string, { courseCount: number; sectionCount: number }>;
   courses: Course[];
@@ -57,6 +66,18 @@ export default function AppShell() {
 
   const sectionsById = useMemo(() => {
     return Object.fromEntries((data?.sections ?? []).map((s) => [s.id, s]));
+  }, [data]);
+
+  const coursesById = useMemo(() => {
+    return Object.fromEntries((data?.courses ?? []).map((c) => [c.id, c]));
+  }, [data]);
+
+  const courseColors = useMemo(() => {
+    const colors: Record<string, string> = {};
+    for (const course of data?.courses ?? []) {
+      colors[course.id] = colorFromString(course.id);
+    }
+    return colors;
   }, [data]);
 
   // Obtener solo los IDs de las secciones seleccionadas
@@ -176,6 +197,8 @@ export default function AppShell() {
         <main className="col-span-12 lg:col-span-8 bg-white rounded-2xl p-4 border">
           <ScheduleGrid
             sectionsById={sectionsById}
+            coursesById={coursesById}
+            courseColors={courseColors}
             selectedSectionIds={selectedSectionIds}
             previewSectionId={hoveredSectionId}
           />

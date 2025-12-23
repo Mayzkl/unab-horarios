@@ -54,6 +54,9 @@ export default function CourseSidebar({
                   >
                     <div className="text-sm font-medium">
                       NRC {s.nrc} {s.professor ? `· ${s.professor}` : ""}
+                      <span className="ml-2 inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide">
+                        {s.activityType || "SECCIÓN"}
+                      </span>
                     </div>
                     <div className="text-xs text-zinc-600">
                       {s.meetings
