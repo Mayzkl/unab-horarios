@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Course, Section } from "@/types/schedule";
-import { buildOccupancy, findConflict, formatSlot } from "@/lib/scheduleLogic";
 import CourseSidebar from "@/components/CourseSidebar";
 import ScheduleGrid from "@/components/ScheduleGrid";
 
@@ -17,10 +16,8 @@ export default function AppShell() {
   const [semester, setSemester] = useState<string>("");
   const [query, setQuery] = useState<string>("");
   const [hoveredSectionId, setHoveredSectionId] = useState<string | null>(null);
-  const [highlightSlot, setHighlightSlot] = useState<string | null>(null);
   
   // Estado para manejar las secciones seleccionadas
-  // Cambiar a un arreglo en vez de una cadena de texto para almacenar múltiples selecciones
   const [selectedByCourse, setSelectedByCourse] = useState<Record<string, string[]>>({});
 
 
@@ -52,35 +49,87 @@ export default function AppShell() {
   }, [data, semester, query]);
 
   // Filtra las secciones solo de los cursos visibles
-  const sections = useMemo(() => {
+  const visibleSections = useMemo(() => {
     if (!data) return [];
     const visibleCourseIds = new Set(courses.map(c => c.id));
     return data.sections.filter((section) => visibleCourseIds.has(section.courseId));
   }, [data, courses]);
 
   const sectionsById = useMemo(() => {
-    return Object.fromEntries(sections.map((s) => [s.id, s]));
-  }, [sections]);
+    return Object.fromEntries((data?.sections ?? []).map((s) => [s.id, s]));
+  }, [data]);
+
+  const sectionsByNrc = useMemo(() => {
+    return Object.fromEntries((data?.sections ?? []).map((s) => [s.nrc, s]));
+  }, [data]);
 
   // Obtener solo los IDs de las secciones seleccionadas
   const selectedSectionIds = useMemo(() => {
     return Object.values(selectedByCourse).flat().filter(Boolean) as string[];
   }, [selectedByCourse]);
 
+  function resolveLinkedSections(sectionId: string): Section[] {
+    const section = sectionsById[sectionId];
+    if (!section) return [];
+
+    const linked: Section[] = [];
+
+    if (Array.isArray(section.linkedSections) && section.linkedSections.length > 0) {
+      for (const linkedSection of section.linkedSections) {
+        if (linkedSection?.id) linked.push(linkedSection);
+      }
+    }
+
+    if (section.linkedNrcRaw) {
+      const linkedNrcs = section.linkedNrcRaw.match(/\d+/g) ?? [];
+      for (const nrc of linkedNrcs) {
+        const linkedSection = sectionsByNrc[nrc];
+        if (linkedSection) linked.push(linkedSection);
+      }
+    }
+
+    const dedup = new Map(linked.map((ls) => [ls.id, ls]));
+    return Array.from(dedup.values());
+  }
+
   function onSelectSection(courseId: string, sectionId: string) {
     setSelectedByCourse((prev) => {
-      const selectedSections = prev[courseId] || [];
+      const primary = sectionsById[sectionId];
+      const linkedSelections = resolveLinkedSections(sectionId);
 
-      // Si la sección ya está seleccionada, la eliminamos
-      if (selectedSections.includes(sectionId)) {
-        return {
-          ...prev,
-          [courseId]: selectedSections.filter((id) => id !== sectionId),
-        };
+      const selections = [
+        { courseId: primary?.courseId ?? courseId, sectionId },
+        ...linkedSelections.map((section) => ({
+          courseId: section.courseId,
+          sectionId: section.id,
+        })),
+      ];
+
+      const uniqueSelections = Array.from(
+        new Map(selections.map((s) => [`${s.courseId}-${s.sectionId}`, s])).values()
+      );
+
+      const shouldRemove = uniqueSelections.every(({ courseId, sectionId }) =>
+        (prev[courseId] ?? []).includes(sectionId)
+      );
+
+      const next: Record<string, string[]> = { ...prev };
+
+      for (const { courseId: cid, sectionId: sid } of uniqueSelections) {
+        const set = new Set(next[cid] ?? []);
+        if (shouldRemove) {
+          set.delete(sid);
+        } else {
+          set.add(sid);
+        }
+        if (set.size === 0) {
+          delete next[cid];
+        } else {
+          next[cid] = Array.from(set);
+        }
       }
 
-      // Si no está seleccionada, la agregamos
-      return { ...prev, [courseId]: [...selectedSections, sectionId] };
+      return next;
     });
   }
 
@@ -120,13 +169,13 @@ export default function AppShell() {
             />
 
             <div className="text-xs text-zinc-500 mt-3">
-              Cursos: {courses.length} · Secciones visibles: {sections.length}
+              Cursos: {courses.length} · Secciones visibles: {visibleSections.length}
             </div>
           </div>
 
           <CourseSidebar
             courses={courses}
-            sections={sections}
+            sections={visibleSections}
             selectedSectionByCourse={selectedByCourse}
             onHoverSection={setHoveredSectionId}
             onSelectSection={onSelectSection}
@@ -135,15 +184,12 @@ export default function AppShell() {
 
         <main className="col-span-12 lg:col-span-8 bg-white rounded-2xl p-4 border">
           <ScheduleGrid
-            courses={courses}
             sectionsById={sectionsById}
             selectedSectionIds={selectedSectionIds}
             previewSectionId={hoveredSectionId}
-            highlightSlot={highlightSlot}
           />
         </main>
       </div>
     </div>
   );
 }
-
