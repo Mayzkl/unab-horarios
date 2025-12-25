@@ -25,16 +25,22 @@ SLOT_RE = re.compile(
     re.IGNORECASE
 )
 
+def time_to_minutes(value: str) -> int:
+    hours, minutes = value.split(":")
+    return int(hours) * 60 + int(minutes)
+
+
 def time_to_block(start: str, end: str) -> List[int]:
+    start_min = time_to_minutes(start)
+    end_min = time_to_minutes(end)
     blocks: List[int] = []
+
     for idx, bstart, bend in UNAB_BLOCKS:
-        if start == bstart and end == bend:
+        bstart_min = time_to_minutes(bstart)
+        bend_min = time_to_minutes(bend)
+        if start_min < bend_min and end_min > bstart_min:
             blocks.append(idx)
-    if not blocks:
-        # fallback: si calza por inicio
-        for idx, bstart, _ in UNAB_BLOCKS:
-            if start == bstart:
-                blocks.append(idx)
+
     return blocks
 
 def parse_meetings(schedule_raw: str) -> List[Dict[str, Any]]:
