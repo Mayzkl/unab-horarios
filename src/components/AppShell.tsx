@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Course, Section } from "@/types/schedule";
 import CourseSidebar from "@/components/CourseSidebar";
 import ScheduleGrid from "@/components/ScheduleGrid";
+import { supabase } from "@/lib/supabase";
 
 const STORAGE_KEY = "unab-horarios/selection";
 
@@ -298,6 +299,10 @@ export default function AppShell() {
                 className="w-full rounded-xl border border-zinc-200 bg-white px-3 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-50"
               >
                 Exportar PDF
+              </button>
+              <button>
+                onClick{() => supabase.auth.signOut()}
+                className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-sm front-semibold text-red-600 hover:bg-red-50"
               </button>
             </div>
           </div>
