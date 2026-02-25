@@ -300,9 +300,10 @@ export default function AppShell() {
               >
                 Exportar PDF
               </button>
-              <button>
-                onClick{() => supabase.auth.signOut()}
+              <button
+                onClick={() => supabase.auth.signOut()}
                 className="w-full rounded-xl border border-red-200 bg-white px-3 py-2 text-sm front-semibold text-red-600 hover:bg-red-50"
+              >
               </button>
             </div>
           </div>
