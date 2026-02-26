@@ -1,4 +1,5 @@
 import { Course, Section } from "@/types/schedule";
+import ProfessorRating from "@/components/ProfessorRating";
 
 type Props = {
   courses: Course[];
@@ -52,11 +53,19 @@ export default function CourseSidebar({
                     onMouseLeave={() => onHoverSection(null)}
                     onClick={() => onSelectSection(c.id, s.id)}
                   >
-                    <div className="text-sm font-medium">
-                      NRC {s.nrc} {s.professor ? `· ${s.professor}` : ""}
-                      <span className="ml-2 inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide">
+                    <div className="text-sm font-medium flex items-center gap-2">
+                      <span>
+                        NRC {s.nrc} {s.professor ? `· ${s.professor}` : ""}
+                      </span>
+                      <span className="inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide">
                         {s.activityType || "SECCIÓN"}
                       </span>
+                      {/* Botón de calificaciones — detiene el click para no seleccionar la sección */}
+                      {s.professor && s.professor !== 'POR DEFINIR POR DEFINIR' && (
+                        <span onClick={e => e.stopPropagation()}>
+                          <ProfessorRating professorName={s.professor} />
+                        </span>
+                      )}
                     </div>
                     <div className="text-xs text-zinc-600">
                       {s.meetings
