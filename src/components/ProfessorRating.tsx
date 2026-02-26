@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { getProfessorByName, getProfessorReviews } from '@/lib/profesores'
+import { moderateComment } from '@/lib/moderation'
 
 type Review = {
     puntualidad: number
@@ -66,6 +67,7 @@ export default function ProfessorRating({ professorName }: Props) {
     const [loading, setLoading] = useState(false)
     const [submitted, setSubmitted] = useState(false)
     const [alreadyReviewed, setAlreadyReviewed] = useState(false)
+    const [submitMessage, setSubmitMessage] = useState('¡Gracias por tu reseña!')
 
     // Form state
     const [form, setForm] = useState({
@@ -115,20 +117,42 @@ export default function ProfessorRating({ professorName }: Props) {
             return
         }
 
-    setLoading(true)
-    const { error } = await supabase.from('reviews').insert({
-        professor_id: professorId,
-        user_id: user.id,
-        ...form
-    })
+        // Moderar el comentario antes de enviar
+        const moderation = moderateComment(form.comentario)
 
-    if (error) {
-        alert('Error al guardar la reseña')
-    } else {
-        setSubmitted(true)
-        loadData()
-    }
-    setLoading(false)
+        if (moderation.status === 'blocked') {
+            alert(`No se puede enviar: ${moderation.reason}`)
+            return
+        }
+
+        setLoading(true)
+
+        const { error } = await supabase.from('reviews').insert({
+            professor_id: professorId,
+            user_id: user.id,
+            puntualidad: form.puntualidad,
+            claridad: form.claridad,
+            exigencia: form.exigencia,
+            disposicion: form.disposicion,
+            metodologia: form.metodologia,
+            comentario: form.comentario || null,
+            status: moderation.status,  // 'approved' o 'pending'
+            moderation_note: moderation.status === 'pending' 
+            ? (moderation as any).reason 
+            : null
+        })
+
+        if (error) {
+            alert('Error al guardar la reseña')
+        } else {
+            setSubmitted(true)
+            if (moderation.status === 'pending') {
+                // Avisamos al usuario sin revelar que fue marcado
+                setSubmitMessage('¡Gracias! Tu reseña será publicada pronto.')
+            }
+            loadData()
+        }
+        setLoading(false)
     }
 
     // Calcular promedios
@@ -224,7 +248,7 @@ export default function ProfessorRating({ professorName }: Props) {
 
                         {submitted && (
                             <p className="text-sm text-green-600 text-center py-2 font-medium">
-                                ✓ ¡Gracias por tu reseña!
+                                ✓ {submitMessage}
                             </p>
                         )}
                     </div>
